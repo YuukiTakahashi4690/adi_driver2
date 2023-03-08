@@ -10,8 +10,9 @@ from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
-    dir = '/home/taka4/ros2_ws/src/adi_driver2'
+    ld = LaunchDescription()
     
+    dir = '/home/y-takahashi/ros2_ws/src/adi_driver2'
     namespace = LaunchConfiguration('namespace')
     with_filter = LaunchConfiguration('with_filter')
     with_rviz = LaunchConfiguration('with_rviz')
@@ -24,7 +25,7 @@ def generate_launch_description():
     publish_tf = LaunchConfiguration('publish_tf')
     publish_debug_topics = LaunchConfiguration('publish_debug_topics')
 
-    urdf_file_path = '/home/taka4/ros2_ws/src/ari_driver2/urdf'
+    urdf_file_path = '/home/y-takahashi/ros2_ws/src/ari_driver2/urdf'
     xacro_file_name = 'orne_gamma.urdf.xacro'
     xacro_file_path = os.path.join(urdf_file_path, 'gamma', xacro_file_name)
     urdf_file_name = 'adis16465_breakout.urdf'
@@ -95,52 +96,14 @@ def generate_launch_description():
         description = 'use publish_debug_topics: true or false'
     )
 
-    configured_params = LaunchConfiguration(
-        device_source_file = device, 
-        flame_id_source_file = flame_id, 
-        burst_read_source_file = burst_read, 
-        publish_temperature_source_file = publish_temperature, 
-        rate_source_file = rate
+    adis16465_node = Node(
+        package='adi_driver2',
+        executable='adis16465_node',
+        name='adis16465_node',
+        output = 'screen'
     )
 
-    IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(xacro_file_path, 'orne_gamma.urdf.xacro')),
-            conditions = IfCondition(with_rviz), 
-            launch_arguments = {
-                'namespace': namespace}.items() 
-    ), 
-
-    Node(
-        package = 'imu', 
-        executable = 'adis16465_node', 
-        name = 'adis16465_node', 
-        outout = 'screen', 
-        parameters = [configured_params]
-    )
-
-    #<param>if
-
-    #<node>
-        #<param>
-        #<param>
-        #<param>
-        #<param>
-        #<param>
-
-    #<node>if
-        #<param>
-        #<param>
-        #<param>
-            #<remap>
-
-    #<node>if
-
-    #<group>if
-        #<node>
-        #<node>
-
-    ld = LaunchDescription()
+    ld.add_action(adis16465_node)
 
     ld.add_action(declare_nameapace_cmd)
     ld.add_action(declare_with_filter_cmd)
@@ -155,3 +118,19 @@ def generate_launch_description():
     ld.add_action(declare_publish_debug_topics_cmd)
 
     return ld
+
+#     configured_params = LaunchConfiguration(
+#         device_source_file = device, 
+#         flame_id_source_file = flame_id, 
+#         burst_read_source_file = burst_read, 
+#         publish_temperature_source_file = publish_temperature, 
+#         rate_source_file = rate
+#     )
+
+#     IncludeLaunchDescription(
+#         PythonLaunchDescriptionSource(
+#             os.path.join(xacro_file_path, 'orne_gamma.urdf.xacro')),
+#             conditions = IfCondition(with_rviz), 
+#             launch_arguments = {
+#                 'namespace': namespace}.items() 
+#     ), 
