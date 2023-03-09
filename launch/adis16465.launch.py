@@ -19,16 +19,21 @@ def generate_launch_description():
     with_plot = LaunchConfiguration('with_plot')
     device = LaunchConfiguration('device')
     flame_id = LaunchConfiguration('flame_id')
-    burst_read = LaunchConfiguration('burst_read')
+    burst_mode = LaunchConfiguration('burst_mode')
     publish_temperature = LaunchConfiguration('publish_temperature')
     rate = LaunchConfiguration('rate')
     publish_tf = LaunchConfiguration('publish_tf')
     publish_debug_topics = LaunchConfiguration('publish_debug_topics')
 
-    urdf_file_path = '/home/y-takahashi/ros2_ws/src/ari_driver2/urdf'
-    xacro_file_name = 'orne_gamma.urdf.xacro'
-    xacro_file_path = os.path.join(urdf_file_path, 'gamma', xacro_file_name)
-    urdf_file_name = 'adis16465_breakout.urdf'
+    urdf = os.path.join(
+        get_package_share_directory('adi_driver2'),
+        'urdf',
+        'adis16465_breakout.urdf')
+
+    # xacro_file_name = 'orne_gamma.urdf.xacro'
+    # xacro_file_path = os.path.join(urdf, 'gamma', xacro_file_name)
+    
+    rviz_config_dir = os.path.join(get_package_share_directory('adi_driver2'), 'rviz', 'imu.rviz')
 
     declare_nameapace_cmd = DeclareLaunchArgument(
         'namespace', 
@@ -56,20 +61,22 @@ def generate_launch_description():
 
     declare_device_cmd = DeclareLaunchArgument(
         'device', 
-        default_value = '/dev/sensors/imu16465', 
+        # default_value = '/dev/sensors/imu16465', 
+        default_value = '/dev/ttyACM0',
         description = 'device: input full path'
     )
 
     declare_flame_id_cmd = DeclareLaunchArgument(
         'flame_id', 
-        default_value = 'imu_link', 
+        default_value = 'imu_link',
+        # default_value = 'imu', 
         description = 'flame_id: input anything flame_id'
     )
 
-    declare_burst_read_cmd = DeclareLaunchArgument(
-        'burst_read', 
+    declare_burst_mode_cmd = DeclareLaunchArgument(
+        'burst_mode', 
         default_value = 'false', 
-        description = 'use burst_read: true or false'
+        description = 'use burst_mode: true or false'
     )
 
     declare_publish_temperature_cmd = DeclareLaunchArgument(
@@ -98,12 +105,34 @@ def generate_launch_description():
 
     adis16465_node = Node(
         package='adi_driver2',
-        executable='adis16465_node',
-        name='adis16465_node',
-        output = 'screen'
+        executable='adis16465',
+        # name='adis16465',
+        output = 'screen', 
+        # remappings=[('imu', 'imu/data_raw')]
+    )
+
+    # robot_state_publisher = Node(
+    #       package='robot_state_publisher',
+    #       executable='robot_state_publisher',
+    #       name='robot_state_publisher',
+    #       output='screen',
+    #       parameters=[{'use_sim_time': False}],
+    #       arguments=[urdf]
+    # )
+
+    rviz2 = Node(
+          package='rviz2',
+          executable='rviz2',
+        #   name='rviz2',
+          arguments=['-d', rviz_config_dir],
+          parameters=[{'use_sim_time': False}],
+          output='log',
+        #   condition=IfCondition(with_rviz)
     )
 
     ld.add_action(adis16465_node)
+    # ld.add_action(robot_state_publisher)
+    ld.add_action(rviz2)
 
     ld.add_action(declare_nameapace_cmd)
     ld.add_action(declare_with_filter_cmd)
@@ -111,7 +140,7 @@ def generate_launch_description():
     ld.add_action(declare_with_plot_cmd)
     ld.add_action(declare_device_cmd)
     ld.add_action(declare_flame_id_cmd)
-    ld.add_action(declare_burst_read_cmd)
+    ld.add_action(declare_burst_mode_cmd)
     ld.add_action(declare_publish_temperature_cmd)
     ld.add_action(declare_rate_cmd)
     ld.add_action(declare_publish_tf_cmd)
@@ -122,7 +151,7 @@ def generate_launch_description():
 #     configured_params = LaunchConfiguration(
 #         device_source_file = device, 
 #         flame_id_source_file = flame_id, 
-#         burst_read_source_file = burst_read, 
+#         burst_mode_source_file = burst_mode, 
 #         publish_temperature_source_file = publish_temperature, 
 #         rate_source_file = rate
 #     )

@@ -1,0 +1,69 @@
+[0.010s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.040s] [35m[1mScanning dependencies of target adis16465[0m
+[0.055s] [ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+[0.118s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:125:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #package
+[0.118s]   125 |     #       [01;31m[Kpackage[m[K='robot_state_publisher',
+[0.118s]       |             [01;31m[K^~~~~~~[m[K
+[0.118s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:126:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #executable
+[0.118s]   126 |     #       [01;31m[Kexecutable[m[K='robot_state_publisher',
+[0.118s]       |             [01;31m[K^~~~~~~~~~[m[K
+[0.118s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:127:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #name
+[0.118s]   127 |     #       [01;31m[Kname[m[K='robot_state_publisher',
+[0.118s]       |             [01;31m[K^~~~[m[K
+[0.118s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:128:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #output
+[0.118s]   128 |     #       [01;31m[Koutput[m[K='screen',
+[0.119s]       |             [01;31m[K^~~~~~[m[K
+[0.119s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:129:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #parameters
+[0.119s]   129 |     #       [01;31m[Kparameters[m[K=[{'use_sim_time': False}],
+[0.119s]       |             [01;31m[K^~~~~~~~~~[m[K
+[0.119s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:130:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #arguments
+[0.119s]   130 |     #       [01;31m[Karguments[m[K=[urdf]
+[0.119s]       |             [01;31m[K^~~~~~~~~[m[K
+[0.119s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:131:7:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #)
+[0.119s]   131 |     # [01;31m[K)[m[K 0;
+[0.119s]       |       [01;31m[K^[m[K
+[0.785s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[0.785s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:104:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.785s]   104 | [01;35m[K}[m[K
+[0.785s]       | [01;35m[K^[m[K
+[0.788s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[0.788s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:124:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_state_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_create_publisher[m[K’?
+[0.788s]   124 |   data.orientation.z =[01;31m[Krobot_state_publisher[m[K = Node(
+[0.788s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[0.788s]       |                       [32m[Krmw_create_publisher[m[K
+[0.788s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:124:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K([m[K’ token
+[0.788s]   124 |   data.orientation.z =robot_state_publisher = Node[01;31m[K([m[K
+[0.788s]       |                                                   [01;31m[K^[m[K
+[0.788s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:132:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[0.788s]   132 |   data.orientation.w = 1[01;31m[K;[m[K
+[0.788s]       |                         [01;31m[K^[m[K
+[0.788s]       |                         [32m[K)[m[K
+[0.788s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:124:51:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[0.788s]   124 |   data.orientation.z =robot_state_publisher = Node[01;36m[K([m[K
+[0.788s]       |                                                   [01;36m[K^[m[K
+[0.792s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[0.792s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[0.792s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[0.792s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[0.792s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[0.793s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[0.793s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[0.793s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[0.793s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[0.793s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[0.793s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33[m[K,
+[0.793s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[0.793s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:135:3:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+[0.793s]   135 |   [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "publish_imu_data",
+[0.793s]       |   [01;31m[K^~~~~~~~~~~[m[K
+[0.793s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:137:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.793s]   137 | [01;35m[K}[m[K
+[0.793s]       | [01;35m[K^[m[K
+[0.796s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[0.796s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:148:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.796s]   148 | [01;35m[K}[m[K
+[0.796s]       | [01;35m[K^[m[K
+[1.390s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+[1.391s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[1.391s] make: *** [Makefile:141: all] エラー 2
+[1.392s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16

@@ -1,0 +1,50 @@
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:125:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #package
+  125 |     #       [01;31m[Kpackage[m[K='robot_state_publisher',
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:126:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #executable
+  126 |     #       [01;31m[Kexecutable[m[K='robot_state_publisher',
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:127:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #name
+  127 |     #       [01;31m[Kname[m[K='robot_state_publisher',
+      |             [01;31m[K^~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:128:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #output
+  128 |     #       [01;31m[Koutput[m[K='screen',
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:129:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #parameters
+  129 |     #       [01;31m[Kparameters[m[K=[{'use_sim_time': False}],
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:130:13:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #arguments
+  130 |     #       [01;31m[Karguments[m[K=[urdf]
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:131:7:[m[K [01;31m[Kerror: [m[Kinvalid preprocessing directive #)
+  131 |     # [01;31m[K)[m[K 0;
+      |       [01;31m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:104:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  104 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:124:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_state_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_create_publisher[m[K’?
+  124 |   data.orientation.z =[01;31m[Krobot_state_publisher[m[K = Node(
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                       [32m[Krmw_create_publisher[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:124:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K([m[K’ token
+  124 |   data.orientation.z =robot_state_publisher = Node[01;31m[K([m[K
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:132:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  132 |   data.orientation.w = 1[01;31m[K;[m[K
+      |                         [01;31m[K^[m[K
+      |                         [32m[K)[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:124:51:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  124 |   data.orientation.z =robot_state_publisher = Node[01;36m[K([m[K
+      |                                                   [01;36m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:136:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  136 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:147:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  147 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+make: *** [Makefile:141: all] エラー 2
