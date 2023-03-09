@@ -1,0 +1,168 @@
+[0.000000] (-) TimerEvent: {}
+[0.000596] (adi_driver2) JobQueued: {'identifier': 'adi_driver2', 'dependencies': OrderedDict()}
+[0.000652] (adi_driver2) JobStarted: {'identifier': 'adi_driver2'}
+[0.008844] (adi_driver2) JobProgress: {'identifier': 'adi_driver2', 'progress': 'cmake'}
+[0.008906] (adi_driver2) Command: {'cmd': ['/usr/bin/cmake', '/home/taka4/ros2_ws/src/adi_driver2', '-DCMAKE_INSTALL_PREFIX=/home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2'], 'cwd': '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ja:en'), ('USER', 'taka4'), ('LC_TIME', 'ja_JP.UTF-8'), ('SSH_AGENT_PID', '2403'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/taka4'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '2224'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '20130'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/taka4/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'taka4'), ('JOURNAL_STREAM', '8:59114'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'taka4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/taka4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/gmbook:@/tmp/.ICE-unix/2441,unix/gmbook:/tmp/.ICE-unix/2441'), ('INVOCATION_ID', '14ded21570e04d7382219ba21d3dabc1'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4bc56c80-6c60-4e43-8cca-95f63e18aad4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy')]), 'shell': False}
+[0.046045] (adi_driver2) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.087006] (adi_driver2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.090195] (adi_driver2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.100042] (-) TimerEvent: {}
+[0.150764] (adi_driver2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.151634] (adi_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200307] (-) TimerEvent: {}
+[0.202821] (adi_driver2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.216842] (adi_driver2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.217170] (adi_driver2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.219228] (adi_driver2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.277432] (adi_driver2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.278587] (adi_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300479] (-) TimerEvent: {}
+[0.334446] (adi_driver2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.342548] (adi_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.342803] (adi_driver2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.344004] (adi_driver2) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.11 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[0.360904] (adi_driver2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.361068] (adi_driver2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.400682] (-) TimerEvent: {}
+[0.501046] (-) TimerEvent: {}
+[0.544943] (adi_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.548746] (adi_driver2) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.601273] (-) TimerEvent: {}
+[0.606611] (adi_driver2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.628207] (adi_driver2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.678737] (adi_driver2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.701471] (-) TimerEvent: {}
+[0.714421] (adi_driver2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.715280] (adi_driver2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.715995] (adi_driver2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.767807] (adi_driver2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.768067] (adi_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.801593] (-) TimerEvent: {}
+[0.815104] (adi_driver2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.815317] (adi_driver2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.859468] (adi_driver2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.859831] (adi_driver2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.901801] (-) TimerEvent: {}
+[0.906478] (adi_driver2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.907374] (adi_driver2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.002018] (-) TimerEvent: {}
+[1.102440] (-) TimerEvent: {}
+[1.130077] (adi_driver2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.151377] (adi_driver2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.151731] (adi_driver2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/taka4/ros2_ws/src/adi_driver2/include\n'}
+[1.151930] (adi_driver2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.153645] (adi_driver2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.156565] (adi_driver2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.158475] (adi_driver2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.170386] (adi_driver2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.170584] (adi_driver2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.172088] (adi_driver2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.174666] (adi_driver2) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.180220] (adi_driver2) StdoutLine: {'line': b'-- Generating done\n'}
+[1.181289] (adi_driver2) StdoutLine: {'line': b'-- Build files have been written to: /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2\n'}
+[1.188065] (adi_driver2) CommandEnded: {'returncode': 0}
+[1.190913] (adi_driver2) JobProgress: {'identifier': 'adi_driver2', 'progress': 'build'}
+[1.191179] (adi_driver2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2', '--', '-j16', '-l16'], 'cwd': '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ja:en'), ('USER', 'taka4'), ('LC_TIME', 'ja_JP.UTF-8'), ('SSH_AGENT_PID', '2403'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/taka4'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '2224'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '20130'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/taka4/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'taka4'), ('JOURNAL_STREAM', '8:59114'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'taka4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/taka4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/gmbook:@/tmp/.ICE-unix/2441,unix/gmbook:/tmp/.ICE-unix/2441'), ('INVOCATION_ID', '14ded21570e04d7382219ba21d3dabc1'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4bc56c80-6c60-4e43-8cca-95f63e18aad4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy')]), 'shell': False}
+[1.202633] (-) TimerEvent: {}
+[1.215493] (adi_driver2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target adis16465\x1b[0m\n'}
+[1.234709] (adi_driver2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465.cpp.o\x1b[0m\n'}
+[1.237165] (adi_driver2) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o\x1b[0m\n'}
+[1.302775] (-) TimerEvent: {}
+[1.325862] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint Adis16465::get_product_id(int16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.326093] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:152:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kr\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[1.326194] (adi_driver2) StderrLine: {'line': b'  152 |   int \x1b[01;35m\x1b[Kr\x1b[m\x1b[K;\n'}
+[1.326284] (adi_driver2) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.326370] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint Adis16465::read_register(char, int16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.326456] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:213:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kaddress\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kunsigned char\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wnarrowing\x1b[m\x1b[K]\n'}
+[1.326545] (adi_driver2) StderrLine: {'line': b'  213 |   unsigned char buff[3] = {0x61, \x1b[01;35m\x1b[Kaddress\x1b[m\x1b[K, 0x00};\n'}
+[1.326692] (adi_driver2) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.326778] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint Adis16465::bias_correction_update()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.326864] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:392:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[1.326948] (adi_driver2) StderrLine: {'line': b'  392 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[1.327041] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.340365] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint Adis16465::read_register(char, int16_t&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.340598] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:230:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[1.340682] (adi_driver2) StderrLine: {'line': b'  230 |   \x1b[01;35m\x1b[Kdata = big_endian_to_short(&buff[1])\x1b[m\x1b[K;\n'}
+[1.340756] (adi_driver2) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.402986] (-) TimerEvent: {}
+[1.503261] (-) TimerEvent: {}
+[1.603556] (-) TimerEvent: {}
+[1.703944] (-) TimerEvent: {}
+[1.804335] (-) TimerEvent: {}
+[1.904730] (-) TimerEvent: {}
+[1.963161] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool adi_driver2::ImuNode::open()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.963369] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:104:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[1.963457] (adi_driver2) StderrLine: {'line': b'  104 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[1.963536] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.967009] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint adi_driver2::ImuNode::publish_imu_data()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.967209] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:128:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[1.967294] (adi_driver2) StderrLine: {'line': b'  128 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[1.967370] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.970523] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint adi_driver2::ImuNode::publish_temp_data()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.970708] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:139:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[1.970792] (adi_driver2) StderrLine: {'line': b'  139 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[1.970867] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.004936] (-) TimerEvent: {}
+[2.105321] (-) TimerEvent: {}
+[2.205713] (-) TimerEvent: {}
+[2.306120] (-) TimerEvent: {}
+[2.406531] (-) TimerEvent: {}
+[2.506936] (-) TimerEvent: {}
+[2.607305] (-) TimerEvent: {}
+[2.707706] (-) TimerEvent: {}
+[2.808107] (-) TimerEvent: {}
+[2.908515] (-) TimerEvent: {}
+[3.008916] (-) TimerEvent: {}
+[3.109344] (-) TimerEvent: {}
+[3.209754] (-) TimerEvent: {}
+[3.310141] (-) TimerEvent: {}
+[3.410526] (-) TimerEvent: {}
+[3.510940] (-) TimerEvent: {}
+[3.611252] (-) TimerEvent: {}
+[3.711566] (-) TimerEvent: {}
+[3.811962] (-) TimerEvent: {}
+[3.912371] (-) TimerEvent: {}
+[3.979312] (adi_driver2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable adis16465\x1b[0m\n'}
+[4.012579] (-) TimerEvent: {}
+[4.058628] (adi_driver2) StdoutLine: {'line': b'[100%] Built target adis16465\n'}
+[4.066613] (adi_driver2) CommandEnded: {'returncode': 0}
+[4.081918] (adi_driver2) JobProgress: {'identifier': 'adi_driver2', 'progress': 'install'}
+[4.090249] (adi_driver2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2'], 'cwd': '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ja:en'), ('USER', 'taka4'), ('LC_TIME', 'ja_JP.UTF-8'), ('SSH_AGENT_PID', '2403'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/taka4'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '2224'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '20130'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/taka4/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'taka4'), ('JOURNAL_STREAM', '8:59114'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'taka4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/taka4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/gmbook:@/tmp/.ICE-unix/2441,unix/gmbook:/tmp/.ICE-unix/2441'), ('INVOCATION_ID', '14ded21570e04d7382219ba21d3dabc1'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:4bc56c80-6c60-4e43-8cca-95f63e18aad4'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy')]), 'shell': False}
+[4.099223] (adi_driver2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.099412] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include\n'}
+[4.099462] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2\n'}
+[4.099504] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2/adis16465.h\n'}
+[4.099543] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2/adis16465_node.hpp\n'}
+[4.099586] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2/adis16470_node.hpp\n'}
+[4.099624] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2/adis16470.h\n'}
+[4.099841] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/lib/adi_driver2/adis16465\n'}
+[4.099946] (adi_driver2) StdoutLine: {'line': b'-- Set runtime path of "/home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/lib/adi_driver2/adis16465" to ""\n'}
+[4.099992] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch\n'}
+[4.100059] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch/adis16465.launch\n'}
+[4.100102] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch/adis16465.launch.py\n'}
+[4.100142] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch/adis16470.launch\n'}
+[4.100198] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch/imu.rviz\n'}
+[4.100237] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/urdf\n'}
+[4.100273] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/urdf/adis16470_breakout.urdf\n'}
+[4.100309] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/urdf/adis16465_breakout.urdf\n'}
+[4.100344] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/ament_index/resource_index/package_run_dependencies/adi_driver2\n'}
+[4.100381] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/ament_index/resource_index/parent_prefix_path/adi_driver2\n'}
+[4.100419] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/environment/ament_prefix_path.sh\n'}
+[4.100481] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/environment/ament_prefix_path.dsv\n'}
+[4.100520] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/environment/path.sh\n'}
+[4.100556] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/environment/path.dsv\n'}
+[4.100607] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/local_setup.bash\n'}
+[4.100643] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/local_setup.sh\n'}
+[4.100679] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/local_setup.zsh\n'}
+[4.100716] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/local_setup.dsv\n'}
+[4.100748] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/package.dsv\n'}
+[4.100798] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/ament_index/resource_index/packages/adi_driver2\n'}
+[4.100862] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.100897] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.100931] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/cmake/adi_driver2Config.cmake\n'}
+[4.100975] (adi_driver2) StdoutLine: {'line': b'-- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/cmake/adi_driver2Config-version.cmake\n'}
+[4.101007] (adi_driver2) StdoutLine: {'line': b'-- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/package.xml\n'}
+[4.102294] (adi_driver2) CommandEnded: {'returncode': 0}
+[4.112834] (-) TimerEvent: {}
+[4.145797] (adi_driver2) JobEnded: {'identifier': 'adi_driver2', 'rc': 0}
+[4.146401] (-) EventReactorShutdown: {}

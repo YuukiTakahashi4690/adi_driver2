@@ -47,7 +47,8 @@ namespace adi_driver2 {
 ImuNode::ImuNode() : Node("adis16465_node") {
   // Read parameters
   declare_parameter("device", "/dev/ttyACM0");
-  declare_parameter("frame_id", "imu");
+  declare_parameter("frame_id", "imu_link");
+  // declare_parameter("frame_id", "imu");
   declare_parameter("burst_mode", true);
   declare_parameter("publish_temperature", true);
   declare_parameter("rate", 100.0);
@@ -68,7 +69,8 @@ ImuNode::ImuNode() : Node("adis16465_node") {
               (publish_temperature_ ? "true" : "false"));
 
   // Data publisher
-  imu_data_pub_ = create_publisher<sensor_msgs::msg::Imu>("data_raw", 100);
+  // imu_data_pub_ = create_publisher<sensor_msgs::msg::Imu>("data_raw", 100);
+  imu_data_pub_ = create_publisher<sensor_msgs::msg::Imu>("imu/data_raw", 100);
   if (publish_temperature_) {
     temp_data_pub_ =
         create_publisher<sensor_msgs::msg::Temperature>("temperature", 100);
@@ -125,6 +127,7 @@ int ImuNode::publish_imu_data() {
   data.orientation.w = 1;
 
   imu_data_pub_->publish(data);
+  RCLCPP_INFO(this->get_logger(), "publish imu_data");
 }
 int ImuNode::publish_temp_data(void) {
   sensor_msgs::msg::Temperature data;
@@ -142,6 +145,7 @@ bool ImuNode::loop() {
     if (burst_mode_) {
       if (imu.update_burst() == 0) {
         publish_imu_data();
+        printf("aaaaaaaa");
       } else {
         RCLCPP_ERROR(this->get_logger(), "Cannot update burst");
       }
@@ -149,6 +153,7 @@ bool ImuNode::loop() {
       if (imu.update() == 0) {
         publish_imu_data();
         publish_temp_data();
+        printf("aaaaaaaa");
       } else {
         RCLCPP_ERROR(this->get_logger(), "Cannot update");
       }
@@ -156,16 +161,20 @@ bool ImuNode::loop() {
       if (imu.update_burst() == 0) {
         publish_imu_data();
         publish_temp_data();
+        printf("aaaaaaaa");
       } else {
         RCLCPP_ERROR(this->get_logger(), "Cannot update burst");
       }
     } else {
       if (imu.update() == 0) {
         publish_imu_data();
+        printf("aaaaaaaa");
       } else {
         RCLCPP_ERROR(this->get_logger(), "Cannot update");
       }
     }
+    printf("aaaaaaaa");
+    // RCLCPP_INFO(this->get_logger(), "publish imu_data");
   });
   return true;
 }
@@ -177,6 +186,7 @@ int main(int argc, char **argv) {
   rclcpp::executors::MultiThreadedExecutor exec;
   exec.add_node(ndt_scan_matcher);
   exec.spin();
+  
   rclcpp::shutdown();
   return 0;
   return (0);
