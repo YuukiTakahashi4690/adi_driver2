@@ -1,0 +1,82 @@
+[0.010s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.040s] [35m[1mScanning dependencies of target adis16465[0m
+[0.058s] [ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+[0.814s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[0.814s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:109:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.815s]   109 | [01;35m[K}[m[K
+[0.815s]       | [01;35m[K^[m[K
+[0.818s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[0.819s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:134:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.819s]   134 | [01;35m[K}[m[K
+[0.819s]       | [01;35m[K^[m[K
+[0.822s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[0.822s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:145:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.822s]   145 | [01;35m[K}[m[K
+[0.822s]       | [01;35m[K^[m[K
+[0.833s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.833s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[0.833s]   236 |   [01;31m[Ktimer_[m[K = this -> create_wall_timer(1s, [this]() {
+[0.833s]       |   [01;31m[K^~~~~~[m[K
+[0.833s]       |   [32m[Ktimer_t[m[K
+[0.833s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:12:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.833s]   236 |   timer_ = [01;31m[Kthis[m[K -> create_wall_timer(1s, [this]() {
+[0.833s]       |            [01;31m[K^~~~[m[K
+[0.833s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:43:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.833s]   236 |   timer_ = this -> create_wall_timer(1s, [[01;31m[Kthis[m[K]() {
+[0.833s]       |                                           [01;31m[K^~~~[m[K
+[0.833s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[0.833s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[0.833s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[0.833s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[0.833s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[0.833s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[0.833s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[0.833s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[0.833s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[0.833s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[0.833s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33[m[K,
+[0.833s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[0.833s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In lambda function:
+[0.833s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:237:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kndt_scan_matcher[m[K’ is not captured
+[0.834s]   237 |     RCLCPP_WARN([01;31m[Kndt_scan_matcher[m[K -> get_logger(), "Keep trying to open the device in 1 second period...");
+[0.834s]       |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.834s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:47:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[0.834s]   236 |   timer_ = this -> create_wall_timer(1s, [this[01;36m[K][m[K() {
+[0.834s]       |                                               [01;36m[K^[m[K
+[0.834s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:229:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr<adi_driver2::ImuNode> ndt_scan_matcher[m[K’ declared here
+[0.834s]   229 |   auto [01;36m[Kndt_scan_matcher[m[K = std::make_shared<adi_driver2::ImuNode>();
+[0.834s]       |        [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[0.834s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[0.834s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[0.834s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[0.834s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[0.834s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[0.834s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[0.834s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[0.834s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[0.834s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[0.834s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[0.834s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33[m[K,
+[0.834s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[0.834s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:237:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kndt_scan_matcher[m[K’ is not captured
+[0.834s]   237 |     RCLCPP_WARN([01;31m[Kndt_scan_matcher[m[K -> get_logger(), "Keep trying to open the device in 1 second period...");
+[0.834s]       |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.834s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:47:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[0.834s]   236 |   timer_ = this -> create_wall_timer(1s, [this[01;36m[K][m[K() {
+[0.834s]       |                                               [01;36m[K^[m[K
+[0.834s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:229:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr<adi_driver2::ImuNode> ndt_scan_matcher[m[K’ declared here
+[0.834s]   229 |   auto [01;36m[Kndt_scan_matcher[m[K = std::make_shared<adi_driver2::ImuNode>();
+[0.834s]       |        [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[0.834s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:240:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kndt_scan_matcher[m[K’ is not captured
+[0.834s]   240 |     [01;31m[Kndt_scan_matcher[m[K -> open();
+[0.834s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.834s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:47:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[0.834s]   236 |   timer_ = this -> create_wall_timer(1s, [this[01;36m[K][m[K() {
+[0.834s]       |                                               [01;36m[K^[m[K
+[0.835s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:229:8:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr<adi_driver2::ImuNode> ndt_scan_matcher[m[K’ declared here
+[0.835s]   229 |   auto [01;36m[Kndt_scan_matcher[m[K = std::make_shared<adi_driver2::ImuNode>();
+[0.835s]       |        [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[1.421s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+[1.421s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[1.422s] make: *** [Makefile:141: all] エラー 2
+[1.423s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16

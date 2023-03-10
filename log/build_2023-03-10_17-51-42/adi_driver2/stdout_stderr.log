@@ -1,0 +1,97 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+In file included from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:43[m[K:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:20:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   59 |   int update_burst([01;31m[K0[m[K);
+      |                    [01;31m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16465::get_product_id(int16_t&)[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:152:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kr[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  152 |   int [01;35m[Kr[m[K;
+      |       [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16465::read_register(char, int16_t&)[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:213:34:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kaddress[m[K’ from ‘[01m[Kchar[m[K’ to ‘[01m[Kunsigned char[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  213 |   unsigned char buff[3] = {0x61, [01;35m[Kaddress[m[K, 0x00};
+      |                                  [01;35m[K^~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K At global scope:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:286:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint Adis16465::update_burst()[m[K’
+  286 | int [01;31m[KAdis16465[m[K::update_burst(void)
+      |     [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:43[m[K:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:7:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kint Adis16465::update_burst(int)[m[K’
+   59 |   int [01;36m[Kupdate_burst[m[K(0);
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:39:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Adis16465[m[K’ defined here
+   39 | class [01;36m[KAdis16465[m[K
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16465::bias_correction_update()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:392:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  392 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16465::read_register(char, int16_t&)[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:230:8:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  230 |   [01;35m[Kdata = big_endian_to_short(&buff[1])[m[K;
+      |   [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/adis16465.dir/build.make:63: CMakeFiles/adis16465.dir/src/adis16465.cpp.o] エラー 1
+make[2]: *** 未完了のジョブを待っています....
+In file included from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:39[m[K,
+                 from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:20:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+   59 |   int update_burst([01;31m[K0[m[K);
+      |                    [01;31m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:110:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  110 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:135:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  135 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:146:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  146 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In lambda function:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:151:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KAdis16465::update_burst()[m[K’
+  151 |       if (imu.update_burst([01;31m[K)[m[K == 0) {
+      |                            [01;31m[K^[m[K
+In file included from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:39[m[K,
+                 from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint Adis16465::update_burst(int)[m[K’
+   59 |   int [01;36m[Kupdate_burst[m[K(0);
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33[m[K,
+                 from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:84:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KAdis16465::update_burst()[m[K’
+  155 |         RCLCPP_ERROR(this->get_logger(), "update_burst_hoge: %d", imu.update_burst([01;31m[K)[m[K);
+      |                                                                                    [01;31m[K^[m[K
+In file included from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:39[m[K,
+                 from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint Adis16465::update_burst(int)[m[K’
+   59 |   int [01;36m[Kupdate_burst[m[K(0);
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:165:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KAdis16465::update_burst()[m[K’
+  165 |       if (imu.update_burst([01;31m[K)[m[K == 0) {
+      |                            [01;31m[K^[m[K
+In file included from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:39[m[K,
+                 from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kint Adis16465::update_burst(int)[m[K’
+   59 |   int [01;36m[Kupdate_burst[m[K(0);
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465.h:59:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+make: *** [Makefile:141: all] エラー 2

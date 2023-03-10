@@ -1,0 +1,48 @@
+[0.011s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.041s] [35m[1mScanning dependencies of target adis16465[0m
+[0.059s] [ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+[0.789s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In constructor ‘[01m[Kadi_driver2::ImuNode::ImuNode()[m[K’:
+[0.789s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:62:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kloop_rate[m[K’ was not declared in this scope
+[0.789s]    62 |   [01;31m[Kloop_rate[m[K = 1000 / get_parameter("rate").get_value<double>();
+[0.789s]       |   [01;31m[K^~~~~~~~~[m[K
+[0.789s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:63:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::chrono::duration<long int, std::ratio<1, 1000> >::duration(<brace-enclosed initializer list>)[m[K’
+[0.789s]    63 |   loop_ms_ = std::chrono::milliseconds{loop_rate[01;31m[K}[m[K;
+[0.789s]       |                                                 [01;31m[K^[m[K
+[0.789s] In file included from [01m[K/usr/include/c++/9/mutex:39[m[K,
+[0.789s]                  from [01m[K/usr/include/c++/9/future:38[m[K,
+[0.789s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[0.789s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[0.789s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33[m[K,
+[0.789s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[0.789s] [01m[K/usr/include/c++/9/chrono:338:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Rep2, class _Period2, class> constexpr std::chrono::duration<_Rep, _Period>::duration(const std::chrono::duration<_Rep, _Period>&)[m[K’
+[0.789s]   338 |    constexpr [01;36m[Kduration[m[K(const duration<_Rep2, _Period2>& __d)
+[0.789s]       |              [01;36m[K^~~~~~~~[m[K
+[0.789s] [01m[K/usr/include/c++/9/chrono:338:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[0.789s] [01m[K/usr/include/c++/9/chrono:331:23:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Rep2, class> constexpr std::chrono::duration<_Rep, _Period>::duration(const _Rep2&)[m[K’
+[0.789s]   331 |    constexpr explicit [01;36m[Kduration[m[K(const _Rep2& __rep)
+[0.789s]       |                       [01;36m[K^~~~~~~~[m[K
+[0.789s] [01m[K/usr/include/c++/9/chrono:331:23:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[0.789s] [01m[K/usr/include/c++/9/chrono:324:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::chrono::duration<_Rep, _Period>::duration(const std::chrono::duration<_Rep, _Period>&) [with _Rep = long int; _Period = std::ratio<1, 1000>][m[K’
+[0.789s]   324 |  [01;36m[Kduration[m[K(const duration&) = default;
+[0.789s]       |  [01;36m[K^~~~~~~~[m[K
+[0.789s] [01m[K/usr/include/c++/9/chrono:324:2:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[0.789s] [01m[K/usr/include/c++/9/chrono:322:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::chrono::duration<_Rep, _Period>::duration() [with _Rep = long int; _Period = std::ratio<1, 1000>][m[K’
+[0.789s]   322 |  constexpr [01;36m[Kduration[m[K() = default;
+[0.789s]       |            [01;36m[K^~~~~~~~[m[K
+[0.789s] [01m[K/usr/include/c++/9/chrono:322:12:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[0.792s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[0.792s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:110:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.792s]   110 | [01;35m[K}[m[K
+[0.792s]       | [01;35m[K^[m[K
+[0.796s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[0.796s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:135:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.796s]   135 | [01;35m[K}[m[K
+[0.796s]       | [01;35m[K^[m[K
+[0.800s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[0.800s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:146:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.800s]   146 | [01;35m[K}[m[K
+[0.800s]       | [01;35m[K^[m[K
+[1.387s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+[1.387s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[1.388s] make: *** [Makefile:141: all] エラー 2
+[1.389s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16

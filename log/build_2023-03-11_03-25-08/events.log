@@ -1,0 +1,118 @@
+[0.000000] (-) TimerEvent: {}
+[0.000141] (adi_driver2) JobQueued: {'identifier': 'adi_driver2', 'dependencies': OrderedDict()}
+[0.000656] (adi_driver2) JobStarted: {'identifier': 'adi_driver2'}
+[0.010161] (adi_driver2) JobProgress: {'identifier': 'adi_driver2', 'progress': 'cmake'}
+[0.011805] (adi_driver2) JobProgress: {'identifier': 'adi_driver2', 'progress': 'build'}
+[0.011868] (adi_driver2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2', '--', '-j16', '-l16'], 'cwd': '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ja:en'), ('USER', 'taka4'), ('LC_TIME', 'ja_JP.UTF-8'), ('SSH_AGENT_PID', '2726'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/taka4'), ('OLDPWD', '/home/taka4'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '2169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '63764'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/taka4/ros2_ws/src/adi_driver2/install:/home/taka4/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'taka4'), ('JOURNAL_STREAM', '8:57836'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'taka4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/taka4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/gmbook:@/tmp/.ICE-unix/2767,unix/gmbook:/tmp/.ICE-unix/2767'), ('INVOCATION_ID', '6995ba3776754f1bbcbca742ebc8cec7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2:/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:14e925e4-a618-43ba-a14f-9410ed76ee74'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2:/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy')]), 'shell': False}
+[0.042662] (adi_driver2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target adis16465\x1b[0m\n'}
+[0.059235] (adi_driver2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o\x1b[0m\n'}
+[0.099959] (-) TimerEvent: {}
+[0.200409] (-) TimerEvent: {}
+[0.300737] (-) TimerEvent: {}
+[0.401169] (-) TimerEvent: {}
+[0.501530] (-) TimerEvent: {}
+[0.601954] (-) TimerEvent: {}
+[0.702393] (-) TimerEvent: {}
+[0.802803] (-) TimerEvent: {}
+[0.826422] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool adi_driver2::ImuNode::open()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.826651] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:109:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[0.826746] (adi_driver2) StderrLine: {'line': b'  109 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.826827] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.830495] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint adi_driver2::ImuNode::publish_imu_data()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.830700] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:134:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[0.830787] (adi_driver2) StderrLine: {'line': b'  134 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.830865] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.834293] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint adi_driver2::ImuNode::publish_temp_data()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.834413] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:145:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[0.834496] (adi_driver2) StderrLine: {'line': b'  145 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.834570] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.845430] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.845656] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktimer_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.845742] (adi_driver2) StderrLine: {'line': b'  236 |   \x1b[01;31m\x1b[Ktimer_\x1b[m\x1b[K = rclcpp::create_wall_timer(1s, [this]() {\n'}
+[0.845818] (adi_driver2) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[0.846357] (adi_driver2) StderrLine: {'line': b'      |   \x1b[32m\x1b[Ktimer_t\x1b[m\x1b[K\n'}
+[0.846469] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.846548] (adi_driver2) StderrLine: {'line': b'  236 |   timer_ = rclcpp::create_wall_timer(1s, [\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K]() {\n'}
+[0.846622] (adi_driver2) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.846693] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.846764] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.846833] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.846902] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.846970] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.847039] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.847108] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.847176] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.847245] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.847313] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.847384] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.847453] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.847522] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[0.847591] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:237:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kndt_scan_matcher\x1b[m\x1b[K\xe2\x80\x99 is not captured\n'}
+[0.847661] (adi_driver2) StderrLine: {'line': b'  237 |     RCLCPP_WARN(\x1b[01;31m\x1b[Kndt_scan_matcher\x1b[m\x1b[K -> get_logger(), "Keep trying to open the device in 1 second period...");\n'}
+[0.847743] (adi_driver2) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.847813] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe lambda has no capture-default\n'}
+[0.847888] (adi_driver2) StderrLine: {'line': b'  236 |   timer_ = rclcpp::create_wall_timer(1s, [this\x1b[01;36m\x1b[K]\x1b[m\x1b[K() {\n'}
+[0.847957] (adi_driver2) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[0.848026] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:229:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<adi_driver2::ImuNode> ndt_scan_matcher\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[0.848101] (adi_driver2) StderrLine: {'line': b'  229 |   auto \x1b[01;36m\x1b[Kndt_scan_matcher\x1b[m\x1b[K = std::make_shared<adi_driver2::ImuNode>();\n'}
+[0.848174] (adi_driver2) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.848252] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.848321] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.848389] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.848457] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.848524] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.848592] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.848660] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.848729] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.848798] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.848867] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.848935] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.849002] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.849070] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:237:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kndt_scan_matcher\x1b[m\x1b[K\xe2\x80\x99 is not captured\n'}
+[0.849139] (adi_driver2) StderrLine: {'line': b'  237 |     RCLCPP_WARN(\x1b[01;31m\x1b[Kndt_scan_matcher\x1b[m\x1b[K -> get_logger(), "Keep trying to open the device in 1 second period...");\n'}
+[0.849208] (adi_driver2) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.849276] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe lambda has no capture-default\n'}
+[0.849344] (adi_driver2) StderrLine: {'line': b'  236 |   timer_ = rclcpp::create_wall_timer(1s, [this\x1b[01;36m\x1b[K]\x1b[m\x1b[K() {\n'}
+[0.849414] (adi_driver2) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[0.849482] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:229:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<adi_driver2::ImuNode> ndt_scan_matcher\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[0.849555] (adi_driver2) StderrLine: {'line': b'  229 |   auto \x1b[01;36m\x1b[Kndt_scan_matcher\x1b[m\x1b[K = std::make_shared<adi_driver2::ImuNode>();\n'}
+[0.849623] (adi_driver2) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.849692] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:240:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kndt_scan_matcher\x1b[m\x1b[K\xe2\x80\x99 is not captured\n'}
+[0.849761] (adi_driver2) StderrLine: {'line': b'  240 |     \x1b[01;31m\x1b[Kndt_scan_matcher\x1b[m\x1b[K -> open();\n'}
+[0.849830] (adi_driver2) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.849898] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:236:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kthe lambda has no capture-default\n'}
+[0.849967] (adi_driver2) StderrLine: {'line': b'  236 |   timer_ = rclcpp::create_wall_timer(1s, [this\x1b[01;36m\x1b[K]\x1b[m\x1b[K() {\n'}
+[0.850036] (adi_driver2) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[0.850104] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:229:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<adi_driver2::ImuNode> ndt_scan_matcher\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[0.850173] (adi_driver2) StderrLine: {'line': b'  229 |   auto \x1b[01;36m\x1b[Kndt_scan_matcher\x1b[m\x1b[K = std::make_shared<adi_driver2::ImuNode>();\n'}
+[0.850241] (adi_driver2) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.850310] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.850383] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:241:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcreate_wall_timer(std::chrono::seconds, main(int, char**)::<lambda()>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.850454] (adi_driver2) StderrLine: {'line': b'  241 |   }\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[0.850523] (adi_driver2) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.850592] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:41\x1b[m\x1b[K,\n'}
+[0.850660] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1224\x1b[m\x1b[K,\n'}
+[0.850728] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[0.850799] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[0.850868] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.850936] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.851013] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.851086] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/create_timer.hpp:90:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr, rclcpp::node_interfaces::NodeBaseInterface*, rclcpp::node_interfaces::NodeTimersInterface*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.851172] (adi_driver2) StderrLine: {'line': b'   90 | \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[0.851248] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.851325] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/create_timer.hpp:90:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[0.851403] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:241:4:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 5 arguments, 2 provided\n'}
+[0.851480] (adi_driver2) StderrLine: {'line': b'  241 |   }\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[0.851558] (adi_driver2) StderrLine: {'line': b'      |    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[0.903017] (-) TimerEvent: {}
+[1.003366] (-) TimerEvent: {}
+[1.103769] (-) TimerEvent: {}
+[1.204202] (-) TimerEvent: {}
+[1.304533] (-) TimerEvent: {}
+[1.404948] (-) TimerEvent: {}
+[1.450923] (adi_driver2) StderrLine: {'line': b'make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[1.451233] (adi_driver2) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[1.451347] (adi_driver2) StderrLine: {'line': b'make: *** [Makefile:141: all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[1.454847] (adi_driver2) CommandEnded: {'returncode': 2}
+[1.482974] (adi_driver2) JobEnded: {'identifier': 'adi_driver2', 'rc': 2}
+[1.493874] (-) EventReactorShutdown: {}

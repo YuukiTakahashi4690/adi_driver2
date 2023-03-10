@@ -111,28 +111,19 @@ def generate_launch_description():
         # remappings=[('imu', 'imu/data_raw')]
     )
 
-    # robot_state_publisher = Node(
-    #       package='robot_state_publisher',
-    #       executable='robot_state_publisher',
-    #       name='robot_state_publisher',
-    #       output='screen',
+    # rviz2 = Node(
+    #       package='rviz2',
+    #       executable='rviz2',
+    #     #   name='rviz2',
+    #       arguments=['-d', rviz_config_dir],
     #       parameters=[{'use_sim_time': False}],
-    #       arguments=[urdf]
+    #       output='log',
+    #     #   condition=IfCondition(with_rviz)
     # )
-
-    rviz2 = Node(
-          package='rviz2',
-          executable='rviz2',
-        #   name='rviz2',
-          arguments=['-d', rviz_config_dir],
-          parameters=[{'use_sim_time': False}],
-          output='log',
-        #   condition=IfCondition(with_rviz)
-    )
 
     ld.add_action(adis16465_node)
     # ld.add_action(robot_state_publisher)
-    ld.add_action(rviz2)
+    # ld.add_action(rviz2)
 
     ld.add_action(declare_nameapace_cmd)
     ld.add_action(declare_with_filter_cmd)
