@@ -1,0 +1,23 @@
+[0.011s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.040s] [35m[1mScanning dependencies of target adis16465[0m
+[0.058s] [ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+[0.795s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[0.796s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:109:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.796s]   109 | [01;35m[K}[m[K
+[0.796s]       | [01;35m[K^[m[K
+[0.799s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[0.799s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:134:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.800s]   134 | [01;35m[K}[m[K
+[0.800s]       | [01;35m[K^[m[K
+[0.803s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[0.803s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:145:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.803s]   145 | [01;35m[K}[m[K
+[0.803s]       | [01;35m[K^[m[K
+[0.812s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.812s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:193:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::executors::MultiThreadedExecutor[m[K’ has no member named ‘[01m[Kloop[m[K’
+[0.812s]   193 |   exec.[01;31m[Kloop[m[K();
+[0.812s]       |        [01;31m[K^~~~[m[K
+[1.407s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+[1.407s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[1.407s] make: *** [Makefile:141: all] エラー 2
+[1.409s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16

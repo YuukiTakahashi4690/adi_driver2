@@ -1,0 +1,36 @@
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:109:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  109 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:134:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  134 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:145:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  145 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:230:3:[m[K [01;31m[Kerror: [m[K‘[01m[KImuNode[m[K’ was not declared in this scope; did you mean ‘[01m[Kadi_driver2::ImuNode[m[K’?
+  230 |   [01;31m[KImuNode[m[K node(ndt_scan_matcher);
+      |   [01;31m[K^~~~~~~[m[K
+      |   [32m[Kadi_driver2::ImuNode[m[K
+In file included from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:42:7:[m[K [01;36m[Knote: [m[K‘[01m[Kadi_driver2::ImuNode[m[K’ declared here
+   42 | class [01;36m[KImuNode[m[K : public rclcpp::Node {
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:232:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<adi_driver2::ImuNode>[m[K’ has no member named ‘[01m[Kopen[m[K’
+  232 |   ndt_scan_matcher.[01;31m[Kopen[m[K();
+      |                    [01;31m[K^~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:233:11:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+  233 |   while (![01;31m[Knode[m[K.is_opened())
+      |           [01;31m[K^~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:237:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<adi_driver2::ImuNode>[m[K’ has no member named ‘[01m[Kopen[m[K’
+  237 |     ndt_scan_matcher.[01;31m[Kopen[m[K();
+      |                      [01;31m[K^~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:239:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<adi_driver2::ImuNode>[m[K’ has no member named ‘[01m[Kspin[m[K’
+  239 |   ndt_scan_matcher.[01;31m[Kspin[m[K();
+      |                    [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+make: *** [Makefile:141: all] エラー 2

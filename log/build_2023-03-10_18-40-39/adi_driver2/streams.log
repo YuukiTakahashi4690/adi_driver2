@@ -1,0 +1,69 @@
+[0.012s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.037s] [35m[1mScanning dependencies of target adis16465[0m
+[0.054s] [ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+[0.787s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[0.787s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:111:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.787s]   111 | [01;35m[K}[m[K
+[0.787s]       | [01;35m[K^[m[K
+[0.791s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[0.791s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:136:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.791s]   136 | [01;35m[K}[m[K
+[0.791s]       | [01;35m[K^[m[K
+[0.794s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[0.794s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:147:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.794s]   147 | [01;35m[K}[m[K
+[0.794s]       | [01;35m[K^[m[K
+[0.801s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.801s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:190:11:[m[K [01;31m[Kerror: [m[K‘[01m[KNodeHandle[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+[0.801s]   190 |   rclcpp::[01;31m[KNodeHandle[m[K nh("~");
+[0.801s]       |           [01;31m[K^~~~~~~~~~[m[K
+[0.801s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:191:29:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+[0.801s]   191 |   adi_driver2::ImuNode node([01;31m[Knh[m[K);
+[0.801s]       |                             [01;31m[K^~[m[K
+[0.804s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[0.804s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[0.804s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[0.804s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[0.804s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[0.804s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[0.804s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[0.804s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[0.804s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[0.804s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[0.804s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33[m[K,
+[0.804s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[0.804s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:199:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.804s]   199 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "aaaaaaa");
+[0.804s]       |                 [01;31m[K^~~~[m[K
+[0.804s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:199:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.804s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:199:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.804s]   199 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "aaaaaaa");
+[0.804s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[0.805s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:199:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.805s]   199 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "aaaaaaa");
+[0.805s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[0.805s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:199:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[0.805s]   199 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "aaaaaaa");
+[0.805s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[0.805s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[0.805s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[0.805s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[0.805s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[0.805s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[0.805s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[0.805s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[0.805s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[0.805s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[0.805s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[0.805s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33[m[K,
+[0.805s]                  from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[0.805s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:199:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.805s]   199 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "aaaaaaa");
+[0.805s]       |                 [01;31m[K^~~~[m[K
+[0.805s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:199:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.805s]   199 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "aaaaaaa");
+[0.805s]       |                 [01;31m[K^~~~[m[K
+[1.385s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+[1.386s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[1.386s] make: *** [Makefile:141: all] エラー 2
+[1.388s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16

@@ -45,6 +45,7 @@ using namespace std::chrono_literals;
 namespace adi_driver2 {
 
 ImuNode::ImuNode() : Node("adis16465_node") {
+  
   // Read parameters
   declare_parameter("device", "/dev/ttyACM0");
   declare_parameter("frame_id", "imu_link");
@@ -62,7 +63,7 @@ ImuNode::ImuNode() : Node("adis16465_node") {
 
   RCLCPP_INFO(this->get_logger(), "device: %s", device_.c_str());
   RCLCPP_INFO(this->get_logger(), "frame_id: %s", frame_id_.c_str());
-  RCLCPP_INFO(this->get_logger(), "rate: %f [Hz]", loop_rate);
+  RCLCPP_INFO(this->get_logger(), "rate: %d [Hz]", loop_rate);
   RCLCPP_INFO(this->get_logger(), "burst_mode: %s",
               (burst_mode_ ? "true" : "false"));
   RCLCPP_INFO(this->get_logger(), "publish_temperature: %s",
@@ -79,6 +80,8 @@ ImuNode::ImuNode() : Node("adis16465_node") {
   // Bias estimate service
   // bias_srv_ = node_handle_.advertiseService("bias_estimate",
   //                                           &ImuNode::bias_estimate, this);
+  // ImuNode::open();
+  ImuNode::loop();
 }
 
 ImuNode::~ImuNode() { imu.closePort(); }
@@ -97,8 +100,8 @@ bool ImuNode::open(void) {
                  device_.c_str());
   }
   // Wait 10ms for SPI ready
-  // usleep(10000);
-  sleep(10000);
+  usleep(10000);
+  // sleep(10000);
   int16_t pid = 0;
   imu.get_product_id(pid);
   RCLCPP_INFO(this->get_logger(), "Product ID: %x\n", pid);
@@ -127,7 +130,7 @@ int ImuNode::publish_imu_data() {
   data.orientation.w = 1;
 
   imu_data_pub_->publish(data);
-  RCLCPP_INFO(this->get_logger(), "publish imu_data");
+  RCLCPP_INFO(this->get_logger(), "publish imu/data_raw0");
 }
 int ImuNode::publish_temp_data(void) {
   sensor_msgs::msg::Temperature data;
@@ -141,40 +144,42 @@ int ImuNode::publish_temp_data(void) {
   temp_data_pub_->publish(data);
 }
 bool ImuNode::loop() {
+  // ImuNode::open();
   loop_timer_ = create_wall_timer(1s, [this]() {
     if (burst_mode_) {
       if (imu.update_burst() == 0) {
         publish_imu_data();
-        printf("aaaaaaaa");
+        RCLCPP_INFO(this->get_logger(), "publish imu/data_raw1");
       } else {
         RCLCPP_ERROR(this->get_logger(), "Cannot update burst");
+        RCLCPP_ERROR(this->get_logger(), "update_burst_hoge: %d", imu.update_burst());
       }
     } else if (publish_temperature_) {
       if (imu.update() == 0) {
         publish_imu_data();
+        RCLCPP_INFO(this->get_logger(), "publish imu/data_raw2");
         publish_temp_data();
-        printf("aaaaaaaa");
       } else {
         RCLCPP_ERROR(this->get_logger(), "Cannot update");
       }
     } else if (burst_mode_ && publish_temperature_) {
       if (imu.update_burst() == 0) {
         publish_imu_data();
+        RCLCPP_INFO(this->get_logger(), "publish imu/data_raw3");
         publish_temp_data();
-        printf("aaaaaaaa");
       } else {
         RCLCPP_ERROR(this->get_logger(), "Cannot update burst");
       }
     } else {
       if (imu.update() == 0) {
         publish_imu_data();
-        printf("aaaaaaaa");
+        RCLCPP_INFO(this->get_logger(), "publish imu/data_raw4");
       } else {
         RCLCPP_ERROR(this->get_logger(), "Cannot update");
       }
     }
-    printf("aaaaaaaa");
-    // RCLCPP_INFO(this->get_logger(), "publish imu_data");
+    // publish_imu_data();
+    RCLCPP_INFO(this->get_logger(), "Cannot publish !! imu/data_raw5");
   });
   return true;
 }
@@ -186,8 +191,35 @@ int main(int argc, char **argv) {
   rclcpp::executors::MultiThreadedExecutor exec;
   exec.add_node(ndt_scan_matcher);
   exec.spin();
-  
   rclcpp::shutdown();
   return 0;
   return (0);
 }
+
+// int main(int argc, char **argv) {
+//   rclcpp::init(argc, argv);
+
+//   auto ndt_scan_matcher = std::make_shared<adi_driver2::ImuNode>();
+//   rclcpp::executors::MultiThreadedExecutor exec;
+  
+//   // adi_driver2::ImuNode* hoge = ndt_scan_matcher.get();
+//   // if (hoge != nullptr){
+//   //   hoge -> open();
+//   // }
+//   exec.add_node(ndt_scan_matcher);
+//   ndt_scan_matcher -> open();
+
+//   while (!ndt_scan_matcher -> is_opened()){
+//     RCLCPP_WARN(ndt_scan_matcher -> get_logger(), "Keep trying to open the device in 1 second period...");
+//     std::this_thread::sleep_for(std::chrono::seconds(1));
+//     ndt_scan_matcher -> open();
+//   }
+
+//   // ndt_scan_matcher -> loop();
+//   exec.spin();
+  
+//   rclcpp::shutdown();
+//   return 0;
+//   return (0);
+// }
+

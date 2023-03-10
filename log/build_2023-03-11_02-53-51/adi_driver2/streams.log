@@ -1,0 +1,32 @@
+[0.012s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.039s] [35m[1mScanning dependencies of target adis16465[0m
+[0.055s] [ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+[0.810s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[0.810s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:109:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.810s]   109 | [01;35m[K}[m[K
+[0.810s]       | [01;35m[K^[m[K
+[0.814s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[0.814s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:134:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.814s]   134 | [01;35m[K}[m[K
+[0.814s]       | [01;35m[K^[m[K
+[0.818s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[0.818s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:145:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.818s]   145 | [01;35m[K}[m[K
+[0.818s]       | [01;35m[K^[m[K
+[0.818s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K At global scope:
+[0.818s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:146:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kbool adi_driver2::ImuNode::spin()[m[K’
+[0.818s]   146 | bool [01;31m[KImuNode[m[K::spin() {
+[0.818s]       |      [01;31m[K^~~~~~~[m[K
+[0.818s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:146:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kbool adi_driver2::ImuNode::spin()[m[K’
+[0.818s] In file included from [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40[m[K:
+[0.818s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:42:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass adi_driver2::ImuNode[m[K’ defined here
+[0.818s]    42 | class [01;36m[KImuNode[m[K : public rclcpp::Node {
+[0.818s]       |       [01;36m[K^~~~~~~[m[K
+[0.820s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.820s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:193:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class adi_driver2::ImuNode[m[K’ {aka ‘[01m[Kclass adi_driver2::ImuNode[m[K’} has no member named ‘[01m[Kspin[m[K’
+[0.820s]   193 |   ndt_scan_matcher -> [01;31m[Kspin[m[K();
+[0.820s]       |                       [01;31m[K^~~~[m[K
+[1.395s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+[1.395s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[1.395s] make: *** [Makefile:141: all] エラー 2
+[1.397s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16

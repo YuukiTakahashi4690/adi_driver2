@@ -1,0 +1,533 @@
+[0.000000] (-) TimerEvent: {}
+[0.000099] (adi_driver2) JobQueued: {'identifier': 'adi_driver2', 'dependencies': OrderedDict()}
+[0.000120] (adi_driver2) JobStarted: {'identifier': 'adi_driver2'}
+[0.008682] (adi_driver2) JobProgress: {'identifier': 'adi_driver2', 'progress': 'cmake'}
+[0.009333] (adi_driver2) JobProgress: {'identifier': 'adi_driver2', 'progress': 'build'}
+[0.009376] (adi_driver2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2', '--', '-j16', '-l16'], 'cwd': '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'ja:en'), ('USER', 'taka4'), ('LC_TIME', 'ja_JP.UTF-8'), ('SSH_AGENT_PID', '2726'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/taka4'), ('OLDPWD', '/home/taka4'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('MANAGERPID', '2169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '63764'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/taka4/ros2_ws/src/adi_driver2/install:/home/taka4/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'taka4'), ('JOURNAL_STREAM', '8:57836'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'taka4'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/taka4/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/gmbook:@/tmp/.ICE-unix/2767,unix/gmbook:/tmp/.ICE-unix/2767'), ('INVOCATION_ID', '6995ba3776754f1bbcbca742ebc8cec7'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2:/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:14e925e4-a618-43ba-a14f-9410ed76ee74'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2:/home/taka4/ros2_ws/install/adis16465_node:/home/taka4/ros2_ws/install/adi_driver2:/opt/ros/foxy')]), 'shell': False}
+[0.037116] (adi_driver2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target adis16465\x1b[0m\n'}
+[0.056295] (adi_driver2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o\x1b[0m\n'}
+[0.099654] (-) TimerEvent: {}
+[0.200091] (-) TimerEvent: {}
+[0.300491] (-) TimerEvent: {}
+[0.400887] (-) TimerEvent: {}
+[0.501296] (-) TimerEvent: {}
+[0.601626] (-) TimerEvent: {}
+[0.702053] (-) TimerEvent: {}
+[0.802447] (-) TimerEvent: {}
+[0.825898] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool adi_driver2::ImuNode::open()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.826119] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:109:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[0.826212] (adi_driver2) StderrLine: {'line': b'  109 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.826292] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.829979] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint adi_driver2::ImuNode::publish_imu_data()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.830172] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:134:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[0.830260] (adi_driver2) StderrLine: {'line': b'  134 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.830338] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.833769] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint adi_driver2::ImuNode::publish_temp_data()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.833953] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:145:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K-Wreturn-type\x1b[m\x1b[K]\n'}
+[0.834040] (adi_driver2) StderrLine: {'line': b'  145 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[0.834119] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[0.835162] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool adi_driver2::loop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.835360] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:148:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kloop_timer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.835448] (adi_driver2) StderrLine: {'line': b'  148 |   \x1b[01;31m\x1b[Kloop_timer_\x1b[m\x1b[K = create_wall_timer(1s, [this]() {\n'}
+[0.835526] (adi_driver2) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.835602] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:148:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.835679] (adi_driver2) StderrLine: {'line': b'  148 |   loop_timer_ = create_wall_timer(1s, [\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K]() {\n'}
+[0.835753] (adi_driver2) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.836817] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[0.836999] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:149:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kburst_mode_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.837086] (adi_driver2) StderrLine: {'line': b'  149 |     if (\x1b[01;31m\x1b[Kburst_mode_\x1b[m\x1b[K) {\n'}
+[0.837163] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.837389] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:150:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.837570] (adi_driver2) StderrLine: {'line': b'  150 |       if (\x1b[01;31m\x1b[Kimu\x1b[m\x1b[K.update_burst() == 0) {\n'}
+[0.837655] (adi_driver2) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.839575] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:151:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublish_imu_data\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.839948] (adi_driver2) StderrLine: {'line': b'  151 |         \x1b[01;31m\x1b[Kpublish_imu_data\x1b[m\x1b[K();\n'}
+[0.840245] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.840355] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.840434] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.840508] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.840580] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.840651] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.840726] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.840797] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.840879] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.840958] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.841030] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.841101] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.841172] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.841243] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:152:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.841319] (adi_driver2) StderrLine: {'line': b'  152 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw1");\n'}
+[0.841394] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.841465] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:152:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.841536] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:152:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.841608] (adi_driver2) StderrLine: {'line': b'  152 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw1");\n'}
+[0.841680] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.841752] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:152:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.841824] (adi_driver2) StderrLine: {'line': b'  152 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw1");\n'}
+[0.841895] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.841973] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:152:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.842045] (adi_driver2) StderrLine: {'line': b'  152 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw1");\n'}
+[0.842117] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.842188] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.842259] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.842330] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.842400] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.842471] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.842543] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.842612] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.842681] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.842758] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.842828] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.842940] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.843019] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.843092] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:152:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.843163] (adi_driver2) StderrLine: {'line': b'  152 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw1");\n'}
+[0.843233] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.843303] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:152:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.843375] (adi_driver2) StderrLine: {'line': b'  152 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw1");\n'}
+[0.843444] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.843517] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.843625] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.843697] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.843772] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.843844] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.843913] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.843983] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.844052] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.844122] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.844192] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.844261] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.844331] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.844401] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:154:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.844475] (adi_driver2) StderrLine: {'line': b'  154 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update burst");\n'}
+[0.844552] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.844622] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:154:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.844692] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:154:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.844763] (adi_driver2) StderrLine: {'line': b'  154 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update burst");\n'}
+[0.844833] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.844903] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:154:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.844972] (adi_driver2) StderrLine: {'line': b'  154 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update burst");\n'}
+[0.845042] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.845112] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:154:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.845182] (adi_driver2) StderrLine: {'line': b'  154 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update burst");\n'}
+[0.845252] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.845321] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.845391] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.845460] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.845531] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.845601] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.845674] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.845860] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.845931] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.846003] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.846073] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.846143] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.846214] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.846284] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:154:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.846355] (adi_driver2) StderrLine: {'line': b'  154 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update burst");\n'}
+[0.846429] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.846499] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:154:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.846570] (adi_driver2) StderrLine: {'line': b'  154 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update burst");\n'}
+[0.846642] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.846712] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.846781] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.846852] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.846921] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.846998] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.847072] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.847142] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.847212] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.847281] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.847351] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.847421] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.847491] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.847563] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.847637] (adi_driver2) StderrLine: {'line': b'  155 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "update_burst_hoge: %d", imu.update_burst());\n'}
+[0.847711] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.847782] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.847852] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.847922] (adi_driver2) StderrLine: {'line': b'  155 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "update_burst_hoge: %d", imu.update_burst());\n'}
+[0.847992] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.848062] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.848134] (adi_driver2) StderrLine: {'line': b'  155 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "update_burst_hoge: %d", imu.update_burst());\n'}
+[0.848283] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.848416] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.848489] (adi_driver2) StderrLine: {'line': b'  155 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "update_burst_hoge: %d", imu.update_burst());\n'}
+[0.848559] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.848629] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.848699] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.848771] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.848862] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.848935] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.849005] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.849076] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.849146] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.849217] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.849288] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.849358] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.849429] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.849500] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.849576] (adi_driver2) StderrLine: {'line': b'  155 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "update_burst_hoge: %d", imu.update_burst());\n'}
+[0.849647] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.849718] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.849790] (adi_driver2) StderrLine: {'line': b'  155 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "update_burst_hoge: %d", imu.update_burst());\n'}
+[0.849862] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.849932] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:157:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublish_temperature_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.850004] (adi_driver2) StderrLine: {'line': b'  157 |     } else if (\x1b[01;31m\x1b[Kpublish_temperature_\x1b[m\x1b[K) {\n'}
+[0.850079] (adi_driver2) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.850150] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:158:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.850222] (adi_driver2) StderrLine: {'line': b'  158 |       if (\x1b[01;31m\x1b[Kimu\x1b[m\x1b[K.update() == 0) {\n'}
+[0.850293] (adi_driver2) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.850364] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:159:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublish_imu_data\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.850435] (adi_driver2) StderrLine: {'line': b'  159 |         \x1b[01;31m\x1b[Kpublish_imu_data\x1b[m\x1b[K();\n'}
+[0.850505] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.850576] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.850646] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.850721] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.850791] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.850866] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.850937] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.851074] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.851184] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.851261] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.851333] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.851404] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.851476] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.851549] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:160:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.851623] (adi_driver2) StderrLine: {'line': b'  160 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw2");\n'}
+[0.851696] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.851768] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:160:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.851842] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:160:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.851919] (adi_driver2) StderrLine: {'line': b'  160 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw2");\n'}
+[0.851992] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.852064] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:160:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.852135] (adi_driver2) StderrLine: {'line': b'  160 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw2");\n'}
+[0.852207] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.852279] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:160:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.852353] (adi_driver2) StderrLine: {'line': b'  160 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw2");\n'}
+[0.852429] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.852502] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.852574] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.852647] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.852718] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.852790] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.852862] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.852934] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.853006] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.853078] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.853149] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.853223] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.853296] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.853369] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:160:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.853443] (adi_driver2) StderrLine: {'line': b'  160 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw2");\n'}
+[0.853517] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.853590] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:160:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.853664] (adi_driver2) StderrLine: {'line': b'  160 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw2");\n'}
+[0.853742] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.853819] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:161:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublish_temp_data\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.853900] (adi_driver2) StderrLine: {'line': b'  161 |         \x1b[01;31m\x1b[Kpublish_temp_data\x1b[m\x1b[K();\n'}
+[0.853975] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.854048] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.854124] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.854197] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.854270] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.854342] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.854414] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.854486] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.854557] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.854629] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.854701] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.854774] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.854913] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.855041] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:163:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.855197] (adi_driver2) StderrLine: {'line': b'  163 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update");\n'}
+[0.855260] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.855296] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:163:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.855331] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:163:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.855369] (adi_driver2) StderrLine: {'line': b'  163 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update");\n'}
+[0.855400] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.855430] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:163:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.855461] (adi_driver2) StderrLine: {'line': b'  163 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update");\n'}
+[0.855491] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.855523] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:163:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.855553] (adi_driver2) StderrLine: {'line': b'  163 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update");\n'}
+[0.855583] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.855612] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.855642] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.855672] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.855702] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.855731] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.855761] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.855790] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.855824] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.855857] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.855889] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.855922] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.855956] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.855989] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:163:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.856023] (adi_driver2) StderrLine: {'line': b'  163 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update");\n'}
+[0.856055] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.856087] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:163:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.856120] (adi_driver2) StderrLine: {'line': b'  163 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update");\n'}
+[0.856185] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.856219] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:166:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.856253] (adi_driver2) StderrLine: {'line': b'  166 |       if (\x1b[01;31m\x1b[Kimu\x1b[m\x1b[K.update_burst() == 0) {\n'}
+[0.856287] (adi_driver2) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.856317] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:167:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublish_imu_data\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.856354] (adi_driver2) StderrLine: {'line': b'  167 |         \x1b[01;31m\x1b[Kpublish_imu_data\x1b[m\x1b[K();\n'}
+[0.856384] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.856412] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.856441] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.856471] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.856500] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.856530] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.856558] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.856586] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.856615] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.856644] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.856676] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.856705] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.856735] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.856766] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:168:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.856797] (adi_driver2) StderrLine: {'line': b'  168 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw3");\n'}
+[0.856830] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.856862] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:168:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.856895] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:168:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.856931] (adi_driver2) StderrLine: {'line': b'  168 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw3");\n'}
+[0.856965] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.857002] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:168:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.857040] (adi_driver2) StderrLine: {'line': b'  168 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw3");\n'}
+[0.857079] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.857120] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:168:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.857166] (adi_driver2) StderrLine: {'line': b'  168 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw3");\n'}
+[0.857209] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.857255] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.857299] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.857341] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.857383] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.857426] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.857468] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.857511] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.857553] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.857592] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.857629] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.857664] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.857699] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.857736] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:168:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.857772] (adi_driver2) StderrLine: {'line': b'  168 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw3");\n'}
+[0.857805] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.857840] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:168:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.857873] (adi_driver2) StderrLine: {'line': b'  168 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw3");\n'}
+[0.857903] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.857935] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:169:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublish_temp_data\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.857968] (adi_driver2) StderrLine: {'line': b'  169 |         \x1b[01;31m\x1b[Kpublish_temp_data\x1b[m\x1b[K();\n'}
+[0.858000] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.858030] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.858060] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.858094] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.858362] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.858411] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.858449] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.858483] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.858517] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.858551] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.858583] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.858615] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.858647] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.858680] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:171:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.858714] (adi_driver2) StderrLine: {'line': b'  171 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update burst");\n'}
+[0.858748] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.858780] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:171:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.858813] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:171:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.858846] (adi_driver2) StderrLine: {'line': b'  171 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update burst");\n'}
+[0.858877] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.858909] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:171:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.858941] (adi_driver2) StderrLine: {'line': b'  171 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update burst");\n'}
+[0.858973] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.859011] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:171:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.859047] (adi_driver2) StderrLine: {'line': b'  171 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update burst");\n'}
+[0.859077] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.859107] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.859137] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.859669] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.859716] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.859755] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.859792] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.859976] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.860021] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.860059] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.860096] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.860128] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.860163] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.860195] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:171:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.860227] (adi_driver2) StderrLine: {'line': b'  171 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update burst");\n'}
+[0.860258] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.860290] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:171:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.860321] (adi_driver2) StderrLine: {'line': b'  171 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update burst");\n'}
+[0.860352] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.860384] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:174:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimu\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.860416] (adi_driver2) StderrLine: {'line': b'  174 |       if (\x1b[01;31m\x1b[Kimu\x1b[m\x1b[K.update() == 0) {\n'}
+[0.860446] (adi_driver2) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[0.860478] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:175:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublish_imu_data\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[0.860510] (adi_driver2) StderrLine: {'line': b'  175 |         \x1b[01;31m\x1b[Kpublish_imu_data\x1b[m\x1b[K();\n'}
+[0.860541] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.860570] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.860600] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.860630] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.860662] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.860690] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.860720] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.860748] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.860776] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.860804] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.860833] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.860865] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.860892] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.860919] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:176:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.860948] (adi_driver2) StderrLine: {'line': b'  176 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw4");\n'}
+[0.860975] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.861003] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:176:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.861030] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:176:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.861058] (adi_driver2) StderrLine: {'line': b'  176 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw4");\n'}
+[0.861085] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.861112] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:176:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.861141] (adi_driver2) StderrLine: {'line': b'  176 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw4");\n'}
+[0.861169] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.861197] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:176:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.861224] (adi_driver2) StderrLine: {'line': b'  176 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "publish imu/data_raw4");\n'}
+[0.861251] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.861279] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.861307] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.861335] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.861364] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.861394] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.861425] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.861453] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.861483] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.861511] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.861540] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.861568] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.861596] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.861623] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:176:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.861652] (adi_driver2) StderrLine: {'line': b'  176 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw4");\n'}
+[0.861681] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.861711] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:176:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.861740] (adi_driver2) StderrLine: {'line': b'  176 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "publish imu/data_raw4");\n'}
+[0.861768] (adi_driver2) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.861796] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.861825] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.861854] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.861882] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.861909] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.861937] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.861966] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.861994] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.862022] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.862050] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.862080] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.862109] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.862136] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:178:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.862165] (adi_driver2) StderrLine: {'line': b'  178 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update");\n'}
+[0.862193] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.862222] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:178:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.862251] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:178:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.862280] (adi_driver2) StderrLine: {'line': b'  178 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update");\n'}
+[0.862308] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.862336] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:178:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.862364] (adi_driver2) StderrLine: {'line': b'  178 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update");\n'}
+[0.862391] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.862418] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:178:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.862445] (adi_driver2) StderrLine: {'line': b'  178 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Cannot update");\n'}
+[0.862473] (adi_driver2) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.862501] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.862529] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.862557] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.862585] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.862616] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.862646] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.862676] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.862704] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.862732] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.862760] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.862789] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.862818] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.862847] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:178:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.862877] (adi_driver2) StderrLine: {'line': b'  178 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update");\n'}
+[0.862908] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.862938] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:178:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.862968] (adi_driver2) StderrLine: {'line': b'  178 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot update");\n'}
+[0.863004] (adi_driver2) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.863035] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[0.863066] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[0.863096] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.863125] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.863263] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.863337] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.863374] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.863406] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.863437] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.863467] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.863498] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.863528] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.863558] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:182:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.863590] (adi_driver2) StderrLine: {'line': b'  182 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot publish !! imu/data_raw5");\n'}
+[0.863620] (adi_driver2) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.863649] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:182:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[0.863684] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:182:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.863714] (adi_driver2) StderrLine: {'line': b'  182 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Cannot publish !! imu/data_raw5");\n'}
+[0.863743] (adi_driver2) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.863772] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:182:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.863805] (adi_driver2) StderrLine: {'line': b'  182 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Cannot publish !! imu/data_raw5");\n'}
+[0.863833] (adi_driver2) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.863859] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:182:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[0.863888] (adi_driver2) StderrLine: {'line': b'  182 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Cannot publish !! imu/data_raw5");\n'}
+[0.863916] (adi_driver2) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.863944] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[0.863973] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[0.864000] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[0.864028] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[0.864056] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[0.864085] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[0.864113] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[0.864140] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[0.864167] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[0.864194] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.864222] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.864249] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.864277] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:182:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.864305] (adi_driver2) StderrLine: {'line': b'  182 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot publish !! imu/data_raw5");\n'}
+[0.864332] (adi_driver2) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.864359] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:182:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 was not captured for this lambda function\n'}
+[0.864388] (adi_driver2) StderrLine: {'line': b'  182 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Cannot publish !! imu/data_raw5");\n'}
+[0.864417] (adi_driver2) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.864444] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool adi_driver2::loop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.864473] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:148:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcreate_wall_timer\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::create_wall_timer\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[0.864503] (adi_driver2) StderrLine: {'line': b'  148 |   loop_timer_ = \x1b[01;31m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(1s, [this]() {\n'}
+[0.864530] (adi_driver2) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.864559] (adi_driver2) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Krclcpp::create_wall_timer\x1b[m\x1b[K\n'}
+[0.864587] (adi_driver2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:41\x1b[m\x1b[K,\n'}
+[0.864613] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:1224\x1b[m\x1b[K,\n'}
+[0.864640] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[0.864668] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[0.864696] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[0.864725] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/include/adi_driver2/adis16465_node.hpp:33\x1b[m\x1b[K,\n'}
+[0.864752] (adi_driver2) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:40\x1b[m\x1b[K:\n'}
+[0.864780] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/create_timer.hpp:90:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::create_wall_timer\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[0.864809] (adi_driver2) StderrLine: {'line': b'   90 | \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[0.864836] (adi_driver2) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.864864] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.864894] (adi_driver2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:193:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::executors::MultiThreadedExecutor\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kloop\x1b[m\x1b[K\xe2\x80\x99\n'}
+[0.864923] (adi_driver2) StderrLine: {'line': b'  193 |   exec.\x1b[01;31m\x1b[Kloop\x1b[m\x1b[K();\n'}
+[0.864950] (adi_driver2) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.902656] (-) TimerEvent: {}
+[1.002993] (-) TimerEvent: {}
+[1.103330] (-) TimerEvent: {}
+[1.203675] (-) TimerEvent: {}
+[1.304021] (-) TimerEvent: {}
+[1.404363] (-) TimerEvent: {}
+[1.435783] (adi_driver2) StderrLine: {'line': b'make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[1.436104] (adi_driver2) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[1.436277] (adi_driver2) StderrLine: {'line': b'make: *** [Makefile:141: all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[1.437810] (adi_driver2) CommandEnded: {'returncode': 2}
+[1.464303] (adi_driver2) JobEnded: {'identifier': 'adi_driver2', 'rc': 2}
+[1.478063] (-) EventReactorShutdown: {}
