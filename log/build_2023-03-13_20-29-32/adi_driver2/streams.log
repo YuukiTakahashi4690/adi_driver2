@@ -1,0 +1,45 @@
+[0.011s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.038s] [35m[1mScanning dependencies of target adis16465[0m
+[0.053s] [ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+[0.803s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In constructor ‘[01m[Kadi_driver2::ImuNode::ImuNode()[m[K’:
+[0.803s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:81:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kbias_srv_[m[K’ was not declared in this scope
+[0.803s]    81 |   [01;31m[Kbias_srv_[m[K = create_service("bias_estimate", bias_estimate);
+[0.803s]       |   [01;31m[K^~~~~~~~~[m[K
+[0.805s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:81:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kbias_estimate[m[K’ was not declared in this scope
+[0.805s]    81 |   bias_srv_ = create_service("bias_estimate", [01;31m[Kbias_estimate[m[K);
+[0.805s]       |                                               [01;31m[K^~~~~~~~~~~~~[m[K
+[0.806s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K At global scope:
+[0.806s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:92:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool adi_driver2::ImuNode::bias_estimate[m[K’ is not a static data member of ‘[01m[Kclass adi_driver2::ImuNode[m[K’
+[0.806s]    92 | bool [01;31m[KImuNode[m[K::bias_estimate (std_srvs::Trigger::Request &req,
+[0.806s]       |      [01;31m[K^~~~~~~[m[K
+[0.806s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:92:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+[0.806s]    92 | bool ImuNode::bias_estimate ([01;31m[Kstd_srvs[m[K::Trigger::Request &req,
+[0.806s]       |                              [01;31m[K^~~~~~~~[m[K
+[0.806s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:92:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kreq[m[K’ was not declared in this scope
+[0.806s]    92 | bool ImuNode::bias_estimate (std_srvs::Trigger::Request &[01;31m[Kreq[m[K,
+[0.807s]       |                                                          [01;31m[K^~~[m[K
+[0.807s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:93:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+[0.807s]    93 |                     [01;31m[Kstd_srvs[m[K::Trigger::Response &res)
+[0.807s]       |                     [01;31m[K^~~~~~~~[m[K
+[0.807s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:93:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kres[m[K’ was not declared in this scope
+[0.807s]    93 |                     std_srvs::Trigger::Response &[01;31m[Kres[m[K)
+[0.807s]       |                                                  [01;31m[K^~~[m[K
+[0.807s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:93:53:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K-fpermissive[m[K]
+[0.807s]    93 |                     std_srvs::Trigger::Response &res[01;31m[K)[m[K
+[0.807s]       |                                                     [01;31m[K^[m[K
+[0.808s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[0.808s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:130:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.808s]   130 | [01;35m[K}[m[K
+[0.808s]       | [01;35m[K^[m[K
+[0.812s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[0.812s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.812s]   155 | [01;35m[K}[m[K
+[0.812s]       | [01;35m[K^[m[K
+[0.816s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[0.816s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:167:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.816s]   167 | [01;35m[K}[m[K
+[0.816s]       | [01;35m[K^[m[K
+[1.416s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+[1.416s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[1.416s] make: *** [Makefile:141: all] エラー 2
+[1.419s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
