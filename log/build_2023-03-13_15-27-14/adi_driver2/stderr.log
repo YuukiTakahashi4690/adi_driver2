@@ -1,0 +1,28 @@
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16465::get_product_id(int16_t&)[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:152:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kr[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  152 |   int [01;35m[Kr[m[K;
+      |       [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16465::read_register(char, int16_t&)[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:213:34:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kaddress[m[K’ from ‘[01m[Kchar[m[K’ to ‘[01m[Kunsigned char[m[K’ [[01;35m[K-Wnarrowing[m[K]
+  213 |   unsigned char buff[3] = {0x61, [01;35m[Kaddress[m[K, 0x00};
+      |                                  [01;35m[K^~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16465::bias_correction_update()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:392:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  392 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16465::read_register(char, int16_t&)[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:230:8:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  230 |   [01;35m[Kdata = big_endian_to_short(&buff[1])[m[K;
+      |   [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:109:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  109 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:134:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  134 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:146:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  146 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

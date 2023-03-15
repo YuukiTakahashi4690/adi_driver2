@@ -1,0 +1,67 @@
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In constructor ‘[01m[Kadi_driver2::ImuNode::ImuNode()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:64:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krate_[m[K’ was not declared in this scope
+   64 |   [01;31m[Krate_[m[K = 100;
+      |   [01;31m[K^~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:111:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  111 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:136:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  136 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:148:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  148 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In function ‘[01m[Kbool adi_driver2::spin()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:152:26:[m[K [01;31m[Kerror: [m[K‘[01m[Krate_[m[K’ was not declared in this scope
+  152 |   rclcpp::Rate loop_rate([01;31m[Krate_[m[K);
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:156:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kburst_mode_[m[K’ was not declared in this scope
+  156 |     if ([01;31m[Kburst_mode_[m[K)
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:158:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ was not declared in this scope
+  158 |       if ([01;31m[Kimu[m[K.update_burst() == 0)
+      |           [01;31m[K^~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:160:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_imu_data[m[K’ was not declared in this scope
+  160 |         [01;31m[Kpublish_imu_data[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:167:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_temperature_[m[K’ was not declared in this scope
+  167 |     else if ([01;31m[Kpublish_temperature_[m[K)
+      |              [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:169:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ was not declared in this scope
+  169 |       if ([01;31m[Kimu[m[K.update() == 0)
+      |           [01;31m[K^~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:171:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_imu_data[m[K’ was not declared in this scope
+  171 |         [01;31m[Kpublish_imu_data[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:172:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_temp_data[m[K’ was not declared in this scope
+  172 |         [01;31m[Kpublish_temp_data[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:181:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ was not declared in this scope
+  181 |       if ([01;31m[Kimu[m[K.update_burst() == 0)
+      |           [01;31m[K^~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:183:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_imu_data[m[K’ was not declared in this scope
+  183 |         [01;31m[Kpublish_imu_data[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:184:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_temp_data[m[K’ was not declared in this scope
+  184 |         [01;31m[Kpublish_temp_data[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:193:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu[m[K’ was not declared in this scope
+  193 |       if ([01;31m[Kimu[m[K.update() == 0)
+      |           [01;31m[K^~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:195:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_imu_data[m[K’ was not declared in this scope
+  195 |         [01;31m[Kpublish_imu_data[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:202:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kspin_once[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[Kspin_some[m[K’?
+  202 |     rclcpp::[01;31m[Kspin_once[m[K();
+      |             [01;31m[K^~~~~~~~~[m[K
+      |             [32m[Kspin_some[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:301:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class adi_driver2::ImuNode[m[K’ {aka ‘[01m[Kclass adi_driver2::ImuNode[m[K’} has no member named ‘[01m[Kspin[m[K’
+  301 |   ndt_scan_matcher -> [01;31m[Kspin[m[K(); //ノードを実行
+      |                       [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+make: *** [Makefile:141: all] エラー 2

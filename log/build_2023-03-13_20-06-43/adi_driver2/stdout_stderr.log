@@ -1,0 +1,28 @@
+[35m[1mScanning dependencies of target adis16465[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In constructor ‘[01m[Kadi_driver2::ImuNode::ImuNode()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:83:20:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_handle_[m[K’ was not declared in this scope; did you mean ‘[01m[Knode_base_[m[K’?
+   83 |   auto bias_srv_ = [01;31m[Knode_handle_[m[K->create_service<my_package_msgs::srv::BiasEstimate>(
+      |                    [01;31m[K^~~~~~~~~~~~[m[K
+      |                    [32m[Knode_base_[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:83:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_package_msgs[m[K’ has not been declared
+   83 |   auto bias_srv_ = node_handle_->create_service<[01;31m[Kmy_package_msgs[m[K::srv::BiasEstimate>(
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:84:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kbias_estimate[m[K’ is not a member of ‘[01m[Kadi_driver2::ImuNode[m[K’
+   84 |   "bias_estimate", std::bind(&ImuNode::[01;31m[Kbias_estimate[m[K, this, std::placeholders::_1, std::placeholders::_2));
+      |                                        [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:114:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  114 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:139:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  139 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:151:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  151 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+make: *** [Makefile:141: all] エラー 2

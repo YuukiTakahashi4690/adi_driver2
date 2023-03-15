@@ -1,0 +1,41 @@
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In constructor ‘[01m[Kadi_driver2::ImuNode::ImuNode()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:81:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kbias_srv_[m[K’ was not declared in this scope
+   81 |   [01;31m[Kbias_srv_[m[K = create_service("bias_estimate", bias_estimate);
+      |   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:81:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kbias_estimate[m[K’ was not declared in this scope
+   81 |   bias_srv_ = create_service("bias_estimate", [01;31m[Kbias_estimate[m[K);
+      |                                               [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K At global scope:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:92:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool adi_driver2::ImuNode::bias_estimate[m[K’ is not a static data member of ‘[01m[Kclass adi_driver2::ImuNode[m[K’
+   92 | bool [01;31m[KImuNode[m[K::bias_estimate (std_srvs::Trigger::Request &req,
+      |      [01;31m[K^~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:92:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+   92 | bool ImuNode::bias_estimate ([01;31m[Kstd_srvs[m[K::Trigger::Request &req,
+      |                              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:92:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kreq[m[K’ was not declared in this scope
+   92 | bool ImuNode::bias_estimate (std_srvs::Trigger::Request &[01;31m[Kreq[m[K,
+      |                                                          [01;31m[K^~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:93:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+   93 |                     [01;31m[Kstd_srvs[m[K::Trigger::Response &res)
+      |                     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:93:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kres[m[K’ was not declared in this scope
+   93 |                     std_srvs::Trigger::Response &[01;31m[Kres[m[K)
+      |                                                  [01;31m[K^~~[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:93:53:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K-fpermissive[m[K]
+   93 |                     std_srvs::Trigger::Response &res[01;31m[K)[m[K
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:130:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  130 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:155:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  155 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:167:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  167 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/adis16465.dir/build.make:76: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o] エラー 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+make: *** [Makefile:141: all] エラー 2
