@@ -12,7 +12,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 def generate_launch_description():
     ld = LaunchDescription()
     
-    dir = '/home/y-takahashi/ros2_ws/src/adi_driver2'
+    dir = '/home/taka4/ros2_ws/src/adi_driver2'
     namespace = LaunchConfiguration('namespace')
     with_filter = LaunchConfiguration('with_filter')
     with_rviz = LaunchConfiguration('with_rviz')
@@ -75,7 +75,7 @@ def generate_launch_description():
 
     declare_burst_mode_cmd = DeclareLaunchArgument(
         'burst_mode', 
-        default_value = 'false', 
+        default_value = 'true', 
         description = 'use burst_mode: true or false'
     )
 
@@ -111,6 +111,13 @@ def generate_launch_description():
         # remappings=[('imu', 'imu/data_raw')]
     )
 
+    adis16470_node = Node(
+        package='adi_driver2',
+        executable='adis16470',
+        output = 'screen', 
+        # remappings=[('imu', 'imu/data_raw')]
+    )
+
     # rviz2 = Node(
     #       package='rviz2',
     #       executable='rviz2',
@@ -121,7 +128,8 @@ def generate_launch_description():
     #     #   condition=IfCondition(with_rviz)
     # )
 
-    ld.add_action(adis16465_node)
+    # ld.add_action(adis16465_node)
+    ld.add_action(adis16470_node)
     # ld.add_action(robot_state_publisher)
     # ld.add_action(rviz2)
 

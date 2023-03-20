@@ -293,18 +293,18 @@ int Adis16470::update_burst(void)
   int size = write(fd_, buff, 24);
   if (size != 24)
   {
-    perror("update_burst");
+    perror("update_burst1");
     return -1;
   }
   if (tcdrain(fd_) < 0)
   {
-    perror("update_burst");
+    perror("update_burst2");
     return -1;
   }
   size = read(fd_, buff, 30);
   if (size != 30)
   {
-    perror("update_burst");
+    perror("update_burst3");
     return -1;
   }
   int16_t diag_stat = big_endian_to_short(&buff[3]);

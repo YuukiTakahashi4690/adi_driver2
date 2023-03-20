@@ -1,0 +1,21 @@
+[0.012s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.056s] [ 33%] [32m[1mLinking CXX executable adis16465[0m
+[0.132s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::~ImuNode()':
+[0.132s] adis16465_node.cpp:(.text+0x4f1): undefined reference to `Adis16465::closePort()'
+[0.132s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::~ImuNode()':
+[0.132s] adis16465_node.cpp:(.text+0x73e): undefined reference to `Adis16465::closePort()'
+[0.132s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::open()':
+[0.132s] adis16465_node.cpp:(.text+0xb8a): undefined reference to `Adis16465::openPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+[0.132s] /usr/bin/ld: adis16465_node.cpp:(.text+0xc12): undefined reference to `Adis16465::get_product_id(short&)'
+[0.132s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::ImuNode()':
+[0.132s] adis16465_node.cpp:(.text+0xfdf): undefined reference to `Adis16465::Adis16465()'
+[0.133s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::loop()::{lambda()#1}::operator()() const [clone .isra.0]':
+[0.133s] adis16465_node.cpp:(.text+0x250d): undefined reference to `Adis16465::update()'
+[0.133s] /usr/bin/ld: adis16465_node.cpp:(.text+0x25d9): undefined reference to `Adis16465::update()'
+[0.133s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `std::_Sp_counted_ptr_inplace<adi_driver2::ImuNode, std::allocator<adi_driver2::ImuNode>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()':
+[0.133s] adis16465_node.cpp:(.text._ZNSt23_Sp_counted_ptr_inplaceIN11adi_driver27ImuNodeESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt23_Sp_counted_ptr_inplaceIN11adi_driver27ImuNodeESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0x42): undefined reference to `Adis16465::closePort()'
+[0.134s] collect2: error: ld returned 1 exit status
+[0.135s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:161: adis16465] エラー 1
+[0.135s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[0.135s] make: *** [Makefile:141: all] エラー 2
+[0.137s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16

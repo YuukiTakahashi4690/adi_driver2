@@ -38,6 +38,7 @@
 // #include "std_srvs/Trigger.h"
 
 #include "adi_driver2/adis16470_node.hpp"
+#include <unistd.h>
 
 using namespace std::chrono_literals;
 
@@ -60,7 +61,7 @@ ImuNode::ImuNode() : Node("adis16470_node") {
 
   RCLCPP_INFO(this->get_logger(), "device: %s", device_.c_str());
   RCLCPP_INFO(this->get_logger(), "frame_id: %s", frame_id_.c_str());
-  RCLCPP_INFO(this->get_logger(), "rate: %f [Hz]", loop_rate);
+  RCLCPP_INFO(this->get_logger(), "rate: %d [Hz]", loop_rate);
   RCLCPP_INFO(this->get_logger(), "burst_mode: %s",
               (burst_mode_ ? "true" : "false"));
   RCLCPP_INFO(this->get_logger(), "publish_temperature: %s",

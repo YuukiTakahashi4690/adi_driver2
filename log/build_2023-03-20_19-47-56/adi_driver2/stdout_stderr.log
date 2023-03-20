@@ -1,0 +1,19 @@
+[ 33%] [32m[1mLinking CXX executable adis16465[0m
+/usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::~ImuNode()':
+adis16465_node.cpp:(.text+0x4f1): undefined reference to `Adis16465::closePort()'
+/usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::~ImuNode()':
+adis16465_node.cpp:(.text+0x73e): undefined reference to `Adis16465::closePort()'
+/usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::open()':
+adis16465_node.cpp:(.text+0xb8a): undefined reference to `Adis16465::openPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+/usr/bin/ld: adis16465_node.cpp:(.text+0xc12): undefined reference to `Adis16465::get_product_id(short&)'
+/usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::ImuNode()':
+adis16465_node.cpp:(.text+0xfdf): undefined reference to `Adis16465::Adis16465()'
+/usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::loop()::{lambda()#1}::operator()() const [clone .isra.0]':
+adis16465_node.cpp:(.text+0x250d): undefined reference to `Adis16465::update()'
+/usr/bin/ld: adis16465_node.cpp:(.text+0x25d9): undefined reference to `Adis16465::update()'
+/usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `std::_Sp_counted_ptr_inplace<adi_driver2::ImuNode, std::allocator<adi_driver2::ImuNode>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()':
+adis16465_node.cpp:(.text._ZNSt23_Sp_counted_ptr_inplaceIN11adi_driver27ImuNodeESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt23_Sp_counted_ptr_inplaceIN11adi_driver27ImuNodeESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0x42): undefined reference to `Adis16465::closePort()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/adis16465.dir/build.make:161: adis16465] エラー 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+make: *** [Makefile:141: all] エラー 2

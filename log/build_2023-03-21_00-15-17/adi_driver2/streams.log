@@ -1,0 +1,81 @@
+[0.011s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.028s] -- Found ament_cmake_auto: 0.9.11 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.044s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.216s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.218s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.299s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.331s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.331s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.541s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.639s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.639s] -- Configured cppcheck include dirs: /home/taka4/ros2_ws/src/adi_driver2/include
+[0.639s] -- Configured cppcheck exclude dirs and/or files: 
+[0.651s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.674s] -- Added test 'lint_cmake' to check CMake code style
+[0.685s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.775s] -- Added test 'uncrustify' to check C / C++ code style
+[0.776s] -- Configured uncrustify additional arguments: 
+[0.787s] -- Added test 'xmllint' to check XML markup files
+[0.789s] -- Configuring done
+[0.794s] -- Generating done
+[0.798s] -- Build files have been written to: /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2
+[0.817s] [35m[1mScanning dependencies of target adis16470[0m
+[0.834s] [ 33%] [32mBuilding CXX object CMakeFiles/adis16470.dir/src/adis16470_node.cpp.o[0m
+[1.575s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16470_node.cpp:[m[K In member function ‘[01m[Kbool adi_driver2::ImuNode::open()[m[K’:
+[1.575s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16470_node.cpp:103:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[1.575s]   103 | [01;35m[K}[m[K
+[1.575s]       | [01;35m[K^[m[K
+[1.579s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16470_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[1.579s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16470_node.cpp:127:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[1.579s]   127 | [01;35m[K}[m[K
+[1.579s]       | [01;35m[K^[m[K
+[1.582s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16470_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[1.582s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16470_node.cpp:138:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[1.583s]   138 | [01;35m[K}[m[K
+[1.583s]       | [01;35m[K^[m[K
+[3.622s] [ 66%] [32m[1mLinking CXX executable adis16470[0m
+[3.703s] [100%] Built target adis16470
+[3.710s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[3.735s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2
+[3.741s] -- Install configuration: ""
+[3.741s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include
+[3.741s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2
+[3.741s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2/adis16465.h
+[3.741s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2/adis16465_node.hpp
+[3.741s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2/adis16470_node.hpp
+[3.741s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/include/adi_driver2/adis16470.h
+[3.742s] -- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/lib/adi_driver2/adis16470
+[3.742s] -- Set runtime path of "/home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/lib/adi_driver2/adis16470" to ""
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch/adis16465.launch
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch/adis16465.launch.py
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch/adis16470.launch
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/launch/imu.rviz
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/urdf
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/urdf/orne_gamma.urdf.xacro
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/urdf/adis16470_breakout.urdf
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/urdf/adis16465_breakout.urdf
+[3.742s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/include
+[3.743s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/include/adi_driver2
+[3.743s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/include/adi_driver2/adis16465.h
+[3.743s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/include/adi_driver2/adis16465_node.hpp
+[3.743s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/include/adi_driver2/adis16470_node.hpp
+[3.743s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/include/adi_driver2/adis16470.h
+[3.743s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/ament_index/resource_index/package_run_dependencies/adi_driver2
+[3.743s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/ament_index/resource_index/parent_prefix_path/adi_driver2
+[3.744s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/environment/ament_prefix_path.sh
+[3.744s] -- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/environment/ament_prefix_path.dsv
+[3.744s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/environment/path.sh
+[3.745s] -- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/environment/path.dsv
+[3.745s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/local_setup.bash
+[3.745s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/local_setup.sh
+[3.746s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/local_setup.zsh
+[3.746s] -- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/local_setup.dsv
+[3.746s] -- Installing: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/package.dsv
+[3.746s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/ament_index/resource_index/packages/adi_driver2
+[3.746s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.747s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.747s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/cmake/adi_driver2Config.cmake
+[3.747s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/cmake/adi_driver2Config-version.cmake
+[3.747s] -- Up-to-date: /home/taka4/ros2_ws/src/adi_driver2/install/adi_driver2/share/adi_driver2/package.xml
+[3.747s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2
