@@ -1,0 +1,44 @@
+[0.011s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.028s] -- Found ament_cmake_auto: 0.9.11 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.044s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.220s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.222s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.303s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.334s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.335s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.545s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.638s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.639s] -- Configured cppcheck include dirs: /home/taka4/ros2_ws/src/adi_driver2/include
+[0.639s] -- Configured cppcheck exclude dirs and/or files: 
+[0.650s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.670s] -- Added test 'lint_cmake' to check CMake code style
+[0.681s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.767s] -- Added test 'uncrustify' to check C / C++ code style
+[0.767s] -- Configured uncrustify additional arguments: 
+[0.778s] -- Added test 'xmllint' to check XML markup files
+[0.780s] -- Configuring done
+[0.785s] -- Generating done
+[0.789s] -- Build files have been written to: /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2
+[0.820s] [ 33%] [32m[1mLinking CXX executable adis16465[0m
+[0.893s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::~ImuNode()':
+[0.893s] adis16465_node.cpp:(.text+0x4f1): undefined reference to `Adis16465::closePort()'
+[0.893s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::~ImuNode()':
+[0.893s] adis16465_node.cpp:(.text+0x73e): undefined reference to `Adis16465::closePort()'
+[0.893s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::open()':
+[0.893s] adis16465_node.cpp:(.text+0xb8a): undefined reference to `Adis16465::openPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+[0.893s] /usr/bin/ld: adis16465_node.cpp:(.text+0xc12): undefined reference to `Adis16465::get_product_id(short&)'
+[0.893s] /usr/bin/ld: adis16465_node.cpp:(.text+0xcbe): undefined reference to `Adis16465::set_bias_estimation_time(short)'
+[0.893s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::ImuNode()':
+[0.893s] adis16465_node.cpp:(.text+0xfdf): undefined reference to `Adis16465::Adis16465()'
+[0.893s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::loop()::{lambda()#1}::operator()() const [clone .isra.0]':
+[0.893s] adis16465_node.cpp:(.text+0x250a): undefined reference to `Adis16465::update()'
+[0.893s] /usr/bin/ld: adis16465_node.cpp:(.text+0x25d9): undefined reference to `Adis16465::update()'
+[0.893s] /usr/bin/ld: adis16465_node.cpp:(.text+0x2691): undefined reference to `Adis16465::update_burst()'
+[0.893s] /usr/bin/ld: adis16465_node.cpp:(.text+0x273d): undefined reference to `Adis16465::update_burst()'
+[0.893s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `std::_Sp_counted_ptr_inplace<adi_driver2::ImuNode, std::allocator<adi_driver2::ImuNode>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()':
+[0.893s] adis16465_node.cpp:(.text._ZNSt23_Sp_counted_ptr_inplaceIN11adi_driver27ImuNodeESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt23_Sp_counted_ptr_inplaceIN11adi_driver27ImuNodeESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0x42): undefined reference to `Adis16465::closePort()'
+[0.899s] collect2: error: ld returned 1 exit status
+[0.900s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:161: adis16465] エラー 1
+[0.900s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[0.900s] make: *** [Makefile:141: all] エラー 2
+[0.904s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16

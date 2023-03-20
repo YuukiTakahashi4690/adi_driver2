@@ -78,9 +78,8 @@ ImuNode::ImuNode() : Node("adis16465_node") {
   }
 
   // Bias estimate service
-  // bias_srv_ = node_handle_.advertiseService("bias_estimate",
-  //                                           &ImuNode::bias_estimate, this);
-  if (!ImuNode::is_opened())
+  // bias_srv_ = create_service(StringCommand, "bias_estimate");
+
   {
     ImuNode::open();
     RCLCPP_INFO(this->get_logger(), "open");
@@ -93,6 +92,22 @@ ImuNode::ImuNode() : Node("adis16465_node") {
 ImuNode::~ImuNode() { 
   imu.closePort(); 
 }
+
+// bool ImuNode::bias_estimate(std_srvs::srv::Trigger::Request::SharedPtr req, std_srvs::srv::Trigger::Response::SharedPtr res)
+// {
+//   RCLCPP_INFO(rclcpp::get_logger("bias_estimate"), "bias_estimate");
+
+//   if (imu.bias_correction_update() < 0)
+//   {
+//     res->success = false;
+//     res->message = "Bias correction update failed";
+//     return false;
+//   }
+
+//   res->success = true;
+//   res->message = "Success";
+//   return true;
+// }
 
 /**
  * @brief Check if the device is opened
@@ -115,7 +130,7 @@ bool ImuNode::open(void) {
   int16_t pid = 0;
   imu.get_product_id(pid);
   RCLCPP_INFO(this->get_logger(), "Product ID: %x", pid);
-  imu.set_bias_estimation_time(0x070a);
+  // imu.set_bias_estimation_time(0x070a);
   return true;
 }
 
@@ -161,6 +176,7 @@ bool ImuNode::loop() {
   loop_timer_ = create_wall_timer(1s, [this]() {
     if (burst_mode_) {
       if (imu.update_burst() == 0) {
+      // if ( bool hogehoge = true) {
         publish_imu_data();
         RCLCPP_INFO(this->get_logger(), "publish imu/data_raw1");
       } else {
@@ -202,7 +218,10 @@ int main(int argc, char **argv) {
   auto ndt_scan_matcher = std::make_shared<adi_driver2::ImuNode>();
   rclcpp::executors::MultiThreadedExecutor exec;
   exec.add_node(ndt_scan_matcher);
-  exec.spin();
+  // exec.spin();
+  while (rclcpp::ok){
+    exec.spin_once();
+  }
   // rclcpp::shutdown();
   return 0;
   return (0);
@@ -240,7 +259,7 @@ int main(int argc, char **argv) {
 
 //   rclcpp::spin(ndt_scan_matcher);
 //   rclcpp::shutdown();
-//   // return 0;
+//   return 0;
 //   return (0);
 // }
 

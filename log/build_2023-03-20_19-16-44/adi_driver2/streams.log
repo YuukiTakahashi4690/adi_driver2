@@ -1,0 +1,51 @@
+[0.013s] Invoking command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
+[0.040s] [35m[1mScanning dependencies of target adis16465[0m
+[0.054s] [ 33%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465.cpp.o[0m
+[0.056s] [ 66%] [32mBuilding CXX object CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o[0m
+[0.146s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16470::get_product_id(int16_t&)[m[K’:
+[0.146s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:152:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kr[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.146s]   152 |   int [01;35m[Kr[m[K;
+[0.146s]       |       [01;35m[K^[m[K
+[0.146s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16470::read_register(char, int16_t&)[m[K’:
+[0.146s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:213:34:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kaddress[m[K’ from ‘[01m[Kchar[m[K’ to ‘[01m[Kunsigned char[m[K’ [[01;35m[K-Wnarrowing[m[K]
+[0.146s]   213 |   unsigned char buff[3] = {0x61, [01;35m[Kaddress[m[K, 0x00};
+[0.146s]       |                                  [01;35m[K^~~~~~~[m[K
+[0.146s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16470::bias_correction_update()[m[K’:
+[0.147s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:392:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.147s]   392 | [01;35m[K}[m[K
+[0.147s]       | [01;35m[K^[m[K
+[0.160s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:[m[K In member function ‘[01m[Kint Adis16470::read_register(char, int16_t&)[m[K’:
+[0.160s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465.cpp:230:8:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+[0.160s]   230 |   [01;35m[Kdata = big_endian_to_short(&buff[1])[m[K;
+[0.161s]       |   [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.826s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_imu_data()[m[K’:
+[0.826s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:160:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.826s]   160 | [01;35m[K}[m[K
+[0.826s]       | [01;35m[K^[m[K
+[0.830s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:[m[K In member function ‘[01m[Kint adi_driver2::ImuNode::publish_temp_data()[m[K’:
+[0.831s] [01m[K/home/taka4/ros2_ws/src/adi_driver2/src/adis16465_node.cpp:172:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[0.831s]   172 | [01;35m[K}[m[K
+[0.831s]       | [01;35m[K^[m[K
+[2.922s] [100%] [32m[1mLinking CXX executable adis16465[0m
+[2.994s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::~ImuNode()':
+[2.994s] adis16465_node.cpp:(.text+0x4f1): undefined reference to `Adis16465::closePort()'
+[2.994s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::~ImuNode()':
+[2.994s] adis16465_node.cpp:(.text+0x73e): undefined reference to `Adis16465::closePort()'
+[2.994s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::open()':
+[2.994s] adis16465_node.cpp:(.text+0xb8a): undefined reference to `Adis16465::openPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+[2.994s] /usr/bin/ld: adis16465_node.cpp:(.text+0xc12): undefined reference to `Adis16465::get_product_id(short&)'
+[2.994s] /usr/bin/ld: adis16465_node.cpp:(.text+0xcbe): undefined reference to `Adis16465::set_bias_estimation_time(short)'
+[2.995s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::ImuNode()':
+[2.995s] adis16465_node.cpp:(.text+0xfdf): undefined reference to `Adis16465::Adis16465()'
+[2.995s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `adi_driver2::ImuNode::loop()::{lambda()#1}::operator()() const [clone .isra.0]':
+[2.995s] adis16465_node.cpp:(.text+0x250a): undefined reference to `Adis16465::update()'
+[2.995s] /usr/bin/ld: adis16465_node.cpp:(.text+0x25d9): undefined reference to `Adis16465::update()'
+[2.995s] /usr/bin/ld: adis16465_node.cpp:(.text+0x2691): undefined reference to `Adis16465::update_burst()'
+[2.995s] /usr/bin/ld: adis16465_node.cpp:(.text+0x273d): undefined reference to `Adis16465::update_burst()'
+[2.995s] /usr/bin/ld: CMakeFiles/adis16465.dir/src/adis16465_node.cpp.o: in function `std::_Sp_counted_ptr_inplace<adi_driver2::ImuNode, std::allocator<adi_driver2::ImuNode>, (__gnu_cxx::_Lock_policy)2>::_M_dispose()':
+[2.995s] adis16465_node.cpp:(.text._ZNSt23_Sp_counted_ptr_inplaceIN11adi_driver27ImuNodeESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv[_ZNSt23_Sp_counted_ptr_inplaceIN11adi_driver27ImuNodeESaIS1_ELN9__gnu_cxx12_Lock_policyE2EE10_M_disposeEv]+0x42): undefined reference to `Adis16465::closePort()'
+[3.002s] collect2: error: ld returned 1 exit status
+[3.003s] make[2]: *** [CMakeFiles/adis16465.dir/build.make:161: adis16465] エラー 1
+[3.004s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/adis16465.dir/all] エラー 2
+[3.004s] make: *** [Makefile:141: all] エラー 2
+[3.007s] Invoked command in '/home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/taka4/ros2_ws/src/adi_driver2/build/adi_driver2 -- -j16 -l16
