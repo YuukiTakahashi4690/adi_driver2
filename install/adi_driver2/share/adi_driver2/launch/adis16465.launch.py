@@ -103,17 +103,17 @@ def generate_launch_description():
         description = 'use publish_debug_topics: true or false'
     )
 
-    adis16465_node = Node(
-        package='adi_driver2',
-        executable='adis16465',
-        # name='adis16465',
-        output = 'screen', 
-        # remappings=[('imu', 'imu/data_raw')]
-    )
+    # adis16465_node = Node(
+    #     package='adi_driver2',
+    #     executable='adis16465',
+    #     # name='adis16465',
+    #     output = 'screen', 
+    #     # remappings=[('imu', 'imu/data_raw')]
+    # )
 
     adis16470_node = Node(
         package='adi_driver2',
-        executable='adis16470',
+        executable='adis16465',
         output = 'screen', 
         # remappings=[('imu', 'imu/data_raw')]
     )

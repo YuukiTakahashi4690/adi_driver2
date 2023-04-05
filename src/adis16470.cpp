@@ -291,6 +291,7 @@ int Adis16470::update_burst(void)
   buff[1] = 0x68;
   buff[2] = 0x00;
   int size = write(fd_, buff, 24);
+  fprintf(stderr, "Sent %d bytes\n", size);
   if (size != 24)
   {
     perror("update_burst1");

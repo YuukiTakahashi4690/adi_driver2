@@ -73,10 +73,10 @@ ImuNode::ImuNode() : Node("adis16470_node") {
     temp_data_pub_ =
         create_publisher<sensor_msgs::msg::Temperature>("temperature", 100);
   }
-
   // Bias estimate service
   // bias_srv_ = node_handle_.advertiseService("bias_estimate",
   //                                           &ImuNode::bias_estimate, this);
+  ImuNode::loop();
 }
 
 ImuNode::~ImuNode() { imu.closePort(); }
@@ -91,8 +91,7 @@ bool ImuNode::is_opened(void) { return (imu.fd_ >= 0); }
 bool ImuNode::open(void) {
   // Open device file
   if (imu.openPort(device_) < 0) {
-    RCLCPP_ERROR(this->get_logger(), "Failed to open device %s",
-                 device_.c_str());
+    RCLCPP_ERROR(this->get_logger(), "Failed to open device %s", device_.c_str());
   }
   // Wait 10ms for SPI ready
   usleep(10000);
@@ -100,6 +99,7 @@ bool ImuNode::open(void) {
   imu.get_product_id(pid);
   RCLCPP_INFO(this->get_logger(), "Product ID: %x\n", pid);
   imu.set_bias_estimation_time(0x070a);
+  RCLCPP_INFO(this->get_logger(), "hogehoge");
 }
 
 int ImuNode::publish_imu_data() {
@@ -170,13 +170,28 @@ bool ImuNode::loop() {
 }
 } // namespace adi_driver2
 
-int main(int argc, char **argv) {
+// int main(int argc, char **argv) {
+//   rclcpp::init(argc, argv);
+//   auto ndt_scan_matcher = std::make_shared<adi_driver2::ImuNode>();
+//   rclcpp::executors::MultiThreadedExecutor exec;
+//   exec.add_node(ndt_scan_matcher);
+//   exec.spin();
+//   rclcpp::shutdown();
+//   return 0;
+//   return (0);
+// }
+
+int main(int argc, char** argv){
   rclcpp::init(argc, argv);
-  auto ndt_scan_matcher = std::make_shared<adi_driver2::ImuNode>();
+  auto node = std::make_shared<adi_driver2::ImuNode>();
   rclcpp::executors::MultiThreadedExecutor exec;
-  exec.add_node(ndt_scan_matcher);
-  exec.spin();
+  exec.add_node(node);
+  node->open();
+  while (rclcpp::ok()){
+    exec.spin_once();
+  }
+  // rclcpp::spin(node);
   rclcpp::shutdown();
-  return 0;
-  return (0);
+  return(0);
 }
+
